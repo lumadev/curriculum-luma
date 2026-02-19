@@ -66,7 +66,15 @@ const TechStack = () => {
 
         {/* Additional skills grid */}
         <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-4 max-w-3xl mx-auto">
-          {['REST APIs', 'Domain-Driven Design', 'CI/CD', 'Agile/Scrum', 'Unit/Functional Tests', 'Web Security', 'Clean Architecture', 'Design Patterns'].map(
+          {[
+            'AI Tools', 
+            'Domain-Driven Design',
+            'CI/CD',
+            'Agile/Scrum',
+            'Unit/Functional Tests',
+            'Web Security',
+            'REST APIs',
+            'Design Patterns'].map(
             (skill) => (
               <div
                 key={skill}
