@@ -32,19 +32,30 @@ const About = () => {
           {/* About Content */}
           <div className="glass-card p-8 md:p-12 mb-12">
             <div className="space-y-6 text-muted-foreground text-lg leading-relaxed">
-              <p>Software Engineer with strong focus on architecture, performance, scalability, and good coding practices. Excellent collaboration, communication, and mentoring skills. Commitment to delivering software that exceeds expectations.<span className="text-foreground font-medium">Software Engineer</span> with 
-                a passion for developing technological solutions that make a difference. My journey 
-                in programming started years ago, and since then I've been specializing in creating 
-                robust and scalable applications.
+              <p>
+                <span className="text-foreground font-medium pr-2">
+                  Software Engineer
+                </span>
+                with strong focus on architecture, performance, scalability, 
+                and best coding practices. 
+                Excellent collaboration, communication, and mentoring skills. 
+                Commitment to delivering software that exceeds expectations.
+
+                A passion for developing technological solutions that make a difference. My journey 
+                in programming started 13 years ago, and since then I've been
+                specializing in creating robust and scalable applications.
               </p>
               <p>
-                I have solid experience in <span className="text-foreground font-medium">full-stack 
-                development</span>, working with various modern technologies. I believe that good 
+                I have solid experience in 
+                <span className="text-foreground font-medium ml-2">
+                  full-stack development
+                </span>, working with various modern technologies. I believe that good 
                 code goes beyond just working — it needs to be clean, testable, and easy to maintain.
               </p>
-              <p>Beyond code, I highly value clear communication and teamwork. <span className="text-foreground font-medium">clear 
-                communication</span> and teamwork. I believe the best products come from 
-                collaboration between people with different perspectives and skills.
+              <p>
+                Beyond code, I highly value clear communication and teamwork. <span className="text-foreground font-medium">clear 
+                communication</span> and teamwork.
+                I believe successful products are the result of close collaboration between engineering, product, and design, driven by clear goals and user value.
               </p>
             </div>
           </div>
