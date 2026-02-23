@@ -1,12 +1,12 @@
-import { useState } from 'react';
-import { Eye } from 'lucide-react';
+import { useState } from "react";
+import { Eye } from "lucide-react";
 import {
   Dialog,
   DialogContent,
   DialogHeader,
   DialogTitle,
-} from '@/components/ui/dialog';
-import { Separator } from '@/components/ui/separator';
+} from "@/components/ui/dialog";
+import { Separator } from "@/components/ui/separator";
 
 interface Project {
   title: string;
@@ -22,41 +22,45 @@ const Projects = () => {
 
   const projects: Project[] = [
     {
-      title: 'E-Commerce Platform',
-      description: 'Complete e-commerce platform with cart, payments, and admin dashboard.',
-      fullDescription: 'A comprehensive e-commerce solution built from the ground up, featuring a fully functional shopping cart, secure payment processing through multiple gateways, and a powerful admin dashboard for inventory and order management. The platform supports multi-vendor capabilities, real-time inventory tracking, and advanced analytics for business insights.',
-      tags: ['React', 'Node.js', 'PostgreSQL', 'Stripe'],
-      image: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&h=400&fit=crop',
+      title: "Music Lesson Scheduler",
+      description: "Application created to simplify class replacement management for music teachers, reducing scheduling conflicts and improving organization.",
+      fullDescription:
+        "Application created to help music teachers manage students, " +
+        "class replacements, and lesson organization in a centralized and intuitive interface. " +
+        "The system improves scheduling control, tracks student progress through assigned songs, " +
+        "and keeps event dates organized — all in one place. " +
+        "It is fully responsive, providing a seamless experience across desktop, tablet, and mobile devices.",
+      
+      tags: ["React", "Node.js", "Express.js"],
+      image: "/makeupProject/makeups-login.png",
       galleryImages: [
-        'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&h=600&fit=crop',
-        'https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=800&h=600&fit=crop',
-        'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop',
+        "/makeupProject/makeups-list.png"
       ],
     },
-    {
-      title: 'Task Management App',
-      description: 'Task management application with real-time collaboration.',
-      fullDescription: 'An enterprise-grade task management solution designed for teams of all sizes. Features include real-time collaboration with live updates, customizable workflows, time tracking, and detailed reporting. The application integrates with popular tools and provides a seamless experience across desktop and mobile devices.',
-      tags: ['TypeScript', 'React', 'Socket.io', 'MongoDB'],
-      image: 'https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=600&h=400&fit=crop',
-      galleryImages: [
-        'https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=800&h=600&fit=crop',
-        'https://images.unsplash.com/photo-1507925921958-8a62f3d1a50d?w=800&h=600&fit=crop',
-        'https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=800&h=600&fit=crop',
-      ],
-    },
-    {
-      title: 'Analytics Dashboard',
-      description: 'Analytics dashboard with interactive visualizations and reports.',
-      fullDescription: 'A powerful analytics platform that transforms raw data into actionable insights. Built with performance in mind, it handles millions of data points while maintaining responsive visualizations. Features include customizable dashboards, automated reporting, predictive analytics, and data export capabilities in multiple formats.',
-      tags: ['Next.js', 'D3.js', 'Python', 'FastAPI'],
-      image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop',
-      galleryImages: [
-        'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop',
-        'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop',
-        'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop',
-      ],
-    },
+    // {
+    //   title: "Task Management App",
+    //   description: "Task management application with real-time collaboration.",
+    //   fullDescription: "An enterprise-grade task management solution designed for teams of all sizes. Features include real-time collaboration with live updates, customizable workflows, time tracking, and detailed reporting. The application integrates with popular tools and provides a seamless experience across desktop and mobile devices.",
+    //   tags: ["TypeScript", "React", "Socket.io", "MongoDB"],
+    //   image: "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=600&h=400&fit=crop",
+    //   galleryImages: [
+    //     "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=800&h=600&fit=crop",
+    //     "https://images.unsplash.com/photo-1507925921958-8a62f3d1a50d?w=800&h=600&fit=crop",
+    //     "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=800&h=600&fit=crop",
+    //   ],
+    // },
+    // {
+    //   title: "Analytics Dashboard",
+    //   description: "Analytics dashboard with interactive visualizations and reports.",
+    //   fullDescription: "A powerful analytics platform that transforms raw data into actionable insights. Built with performance in mind, it handles millions of data points while maintaining responsive visualizations. Features include customizable dashboards, automated reporting, predictive analytics, and data export capabilities in multiple formats.",
+    //   tags: ["Next.js", "D3.js", "Python", "FastAPI"],
+    //   image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop",
+    //   galleryImages: [
+    //     "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop",
+    //     "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop",
+    //     "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop",
+    //   ],
+    // },
   ];
 
   return (
@@ -70,7 +74,7 @@ const Projects = () => {
               Recent <span className="gradient-text">Projects</span>
             </h2>
             <p className="text-muted-foreground max-w-2xl mx-auto mt-4">
-              Some of the projects I've worked on recently
+              Some of the projects I"ve worked on recently
             </p>
           </div>
 
@@ -171,7 +175,7 @@ const Projects = () => {
                     key={index}
                     src={img}
                     alt={`${selectedProject.title} screenshot ${index + 1}`}
-                    className="w-full rounded-lg object-cover aspect-video"
+                    className="w-full rounded-lg object-contain"
                   />
                 ))}
               </div>
