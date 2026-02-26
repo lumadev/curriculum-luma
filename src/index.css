@@ -1,55 +1,44 @@
+@import "tailwindcss";
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+/* =========================
+   THEME (Tailwind v4)
+========================= */
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@theme {
+  --color-background: hsl(222 47% 6%);
+  --color-foreground: hsl(210 40% 98%);
 
-@layer base {
-  :root {
-    --background: 222 47% 6%;
-    --foreground: 210 40% 98%;
+  --color-card: hsl(222 47% 8%);
+  --color-card-foreground: hsl(210 40% 98%);
 
-    --card: 222 47% 8%;
-    --card-foreground: 210 40% 98%;
+  --color-popover: hsl(222 47% 8%);
+  --color-popover-foreground: hsl(210 40% 98%);
 
-    --popover: 222 47% 8%;
-    --popover-foreground: 210 40% 98%;
+  --color-primary: hsl(199 89% 48%);
+  --color-primary-foreground: hsl(222 47% 6%);
 
-    --primary: 199 89% 48%;
-    --primary-foreground: 222 47% 6%;
+  --color-secondary: hsl(222 47% 12%);
+  --color-secondary-foreground: hsl(210 40% 98%);
 
-    --secondary: 222 47% 12%;
-    --secondary-foreground: 210 40% 98%;
+  --color-muted: hsl(222 47% 14%);
+  --color-muted-foreground: hsl(215 20% 65%);
 
-    --muted: 222 47% 14%;
-    --muted-foreground: 215 20% 65%;
+  --color-accent: hsl(280 80% 60%);
+  --color-accent-foreground: hsl(210 40% 98%);
 
-    --accent: 280 80% 60%;
-    --accent-foreground: 210 40% 98%;
+  --color-destructive: hsl(0 84% 60%);
+  --color-destructive-foreground: hsl(210 40% 98%);
 
-    --destructive: 0 84% 60%;
-    --destructive-foreground: 210 40% 98%;
+  --color-border: hsl(222 47% 16%);
+  --color-input: hsl(222 47% 16%);
+  --color-ring: hsl(199 89% 48%);
 
-    --border: 222 47% 16%;
-    --input: 222 47% 16%;
-    --ring: 199 89% 48%;
-
-    --radius: 0.75rem;
-
-    /* Custom tokens */
-    --gradient-primary: linear-gradient(135deg, hsl(199 89% 48%) 0%, hsl(280 80% 60%) 100%);
-    --gradient-text: linear-gradient(90deg, hsl(199 89% 60%) 0%, hsl(280 80% 70%) 50%, hsl(199 89% 60%) 100%);
-    --gradient-subtle: linear-gradient(180deg, hsl(222 47% 8%) 0%, hsl(222 47% 4%) 100%);
-    --glow-primary: 0 0 40px hsl(199 89% 48% / 0.3);
-    --glow-accent: 0 0 60px hsl(280 80% 60% / 0.2);
-  }
-
-  .dark {
-    --background: 222 47% 6%;
-    --foreground: 210 40% 98%;
-  }
+  --radius: 0.75rem;
 }
+
+/* =========================
+   BASE
+========================= */
 
 @layer base {
   * {
@@ -70,37 +59,13 @@
   }
 }
 
-@layer components {
-  .gradient-text {
-    background: var(--gradient-text);
-    background-size: 200% auto;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    animation: gradient-shift 3s ease-in-out infinite;
-  }
+/* =========================
+   COMPONENTS
+========================= */
 
+@layer components {
   .glass-card {
     @apply bg-card/50 backdrop-blur-xl border border-border/50 rounded-2xl;
-  }
-
-  .glow-border {
-    position: relative;
-  }
-
-  .glow-border::before {
-    content: '';
-    position: absolute;
-    inset: -1px;
-    background: var(--gradient-primary);
-    border-radius: inherit;
-    z-index: -1;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-  }
-
-  .glow-border:hover::before {
-    opacity: 1;
   }
 
   .tech-icon {
@@ -132,7 +97,6 @@
 
   .hero-photo {
     @apply relative rounded-2xl overflow-hidden;
-    box-shadow: var(--glow-primary);
   }
 
   .hero-photo::before {
@@ -146,6 +110,10 @@
   }
 }
 
+/* =========================
+   UTILITIES
+========================= */
+
 @layer utilities {
   .animate-fade-up {
     animation: fade-up 0.6s ease-out forwards;
@@ -154,13 +122,11 @@
   .animate-fade-in {
     animation: fade-in 0.6s ease-out forwards;
   }
-
-  .delay-100 { animation-delay: 0.1s; }
-  .delay-200 { animation-delay: 0.2s; }
-  .delay-300 { animation-delay: 0.3s; }
-  .delay-400 { animation-delay: 0.4s; }
-  .delay-500 { animation-delay: 0.5s; }
 }
+
+/* =========================
+   KEYFRAMES
+========================= */
 
 @keyframes fade-up {
   from {
@@ -178,17 +144,7 @@
   to { opacity: 1; }
 }
 
-@keyframes gradient-shift {
-  0%, 100% { background-position: 0% center; }
-  50% { background-position: 100% center; }
-}
-
 @keyframes float {
-  0%, 100% { transform: translateY(0) rotate(0deg); }
-  50% { transform: translateY(-20px) rotate(180deg); }
-}
-
-@keyframes pulse-glow {
-  0%, 100% { box-shadow: 0 0 20px hsl(199 89% 48% / 0.3); }
-  50% { box-shadow: 0 0 40px hsl(199 89% 48% / 0.5); }
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
 }
