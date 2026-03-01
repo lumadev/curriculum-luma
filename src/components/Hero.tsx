@@ -4,15 +4,15 @@ import profileImage from '@/assets/profile-placeholder.jpg';
 const Hero = () => {
   const socialLinks = [{
     icon: Github,
-    href: 'https://github.com',
+    href: 'https://github.com/lumadev',
     label: 'GitHub'
   }, {
     icon: Linkedin,
-    href: 'https://linkedin.com',
+    href: 'https://www.linkedin.com/in/luma-macagnan-5756055b/',
     label: 'LinkedIn'
   }, {
     icon: Mail,
-    href: 'mailto:email@example.com',
+    href: 'lumamacagnan@gmail.com',
     label: 'Email'
   }];
   return <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
