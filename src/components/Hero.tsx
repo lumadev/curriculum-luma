@@ -15,18 +15,6 @@ const Hero = () => {
     label: 'Email'
   }];
   return <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
-      {/* Background particles */}
-      <div className="absolute inset-0 overflow-hidden">
-        {[...Array(20)].map((_, i) => <div key={i} className="particle" style={{
-        width: Math.random() * 4 + 2 + 'px',
-        height: Math.random() * 4 + 2 + 'px',
-        left: Math.random() * 100 + '%',
-        top: Math.random() * 100 + '%',
-        animationDelay: Math.random() * 5 + 's',
-        animationDuration: Math.random() * 3 + 4 + 's'
-      }} />)}
-      </div>
-
       {/* Gradient overlay */}
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-background/50 to-background pointer-events-none" />
 
@@ -38,8 +26,6 @@ const Hero = () => {
               <img src={profileImage} alt="Profile" className="w-full h-full object-cover" />
               <div className="absolute inset-0 bg-gradient-to-t from-background/60 via-transparent to-transparent" />
             </div>
-            {/* Status indicator */}
-            
           </div>
 
           {/* Content */}
