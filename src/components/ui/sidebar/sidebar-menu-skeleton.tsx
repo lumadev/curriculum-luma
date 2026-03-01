@@ -11,11 +11,9 @@ const SidebarMenuSkeleton = React.forwardRef<
   SidebarMenuSkeletonProps
 >(({ className, showIcon = false, ...props }, ref) => {
   // Generate width once and keep it stable
-  const widthRef = React.useRef<string>()
-
-  if (!widthRef.current) {
-    widthRef.current = `${Math.floor(Math.random() * 40) + 50}%`
-  }
+  const [width] = React.useState(() => {
+    return `${Math.floor(Math.random() * 40) + 50}%`
+  })
 
   return (
     <div
@@ -36,7 +34,7 @@ const SidebarMenuSkeleton = React.forwardRef<
         data-sidebar="menu-skeleton-text"
         style={
           {
-            "--skeleton-width": widthRef.current,
+            "--skeleton-width": width,
           } as React.CSSProperties
         }
       />
