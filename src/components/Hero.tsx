@@ -1,5 +1,6 @@
 import { Github, Linkedin, Mail, ArrowDown } from 'lucide-react';
 import profileImage from '@/assets/profile-placeholder.jpg';
+
 const Hero = () => {
   const socialLinks = [{
     icon: Github,
