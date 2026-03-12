@@ -1,5 +1,6 @@
 import { useState } from "react";
-import { Eye } from "lucide-react";
+import { Eye, ChevronDown, ChevronUp } from 'lucide-react';
+import { Button } from '@/components/ui/button/button';
 import {
   Dialog,
   DialogContent,
@@ -19,6 +20,7 @@ interface Project {
 
 const Projects = () => {
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
+  const [showAllImages, setShowAllImages] = useState(false);
 
   const projects: Project[] = [
     {
@@ -34,33 +36,10 @@ const Projects = () => {
       tags: ["React", "Node.js", "Express.js"],
       image: "/makeupProject/makeups-login.png",
       galleryImages: [
-        "/makeupProject/makeups-list.png"
+        "/makeupProject/makeups-list.png",
+        "/makeupProject/initial-page.png"
       ],
     },
-    // {
-    //   title: "Task Management App",
-    //   description: "Task management application with real-time collaboration.",
-    //   fullDescription: "An enterprise-grade task management solution designed for teams of all sizes. Features include real-time collaboration with live updates, customizable workflows, time tracking, and detailed reporting. The application integrates with popular tools and provides a seamless experience across desktop and mobile devices.",
-    //   tags: ["TypeScript", "React", "Socket.io", "MongoDB"],
-    //   image: "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=600&h=400&fit=crop",
-    //   galleryImages: [
-    //     "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=800&h=600&fit=crop",
-    //     "https://images.unsplash.com/photo-1507925921958-8a62f3d1a50d?w=800&h=600&fit=crop",
-    //     "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=800&h=600&fit=crop",
-    //   ],
-    // },
-    // {
-    //   title: "Analytics Dashboard",
-    //   description: "Analytics dashboard with interactive visualizations and reports.",
-    //   fullDescription: "A powerful analytics platform that transforms raw data into actionable insights. Built with performance in mind, it handles millions of data points while maintaining responsive visualizations. Features include customizable dashboards, automated reporting, predictive analytics, and data export capabilities in multiple formats.",
-    //   tags: ["Next.js", "D3.js", "Python", "FastAPI"],
-    //   image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop",
-    //   galleryImages: [
-    //     "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop",
-    //     "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop",
-    //     "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop",
-    //   ],
-    // },
   ];
 
   return (
@@ -74,7 +53,7 @@ const Projects = () => {
               Recent <span className="gradient-text">Projects</span>
             </h2>
             <p className="text-muted-foreground max-w-2xl mx-auto mt-4">
-              Some of the projects I"ve worked on recently
+              Some of the projects I've worked on recently
             </p>
           </div>
 
@@ -131,7 +110,7 @@ const Projects = () => {
       </section>
 
       {/* Project Detail Modal */}
-      <Dialog open={!!selectedProject} onOpenChange={() => setSelectedProject(null)}>
+      <Dialog open={!!selectedProject} onOpenChange={() => { setSelectedProject(null); setShowAllImages(false); }}>
         <DialogContent className="max-w-5xl max-h-[90vh] overflow-y-auto">
           <DialogHeader>
             <DialogTitle className="text-2xl font-display">
@@ -169,16 +148,50 @@ const Projects = () => {
             {/* Right side - Gallery */}
             <div className="flex-1 space-y-4">
               <h4 className="text-sm font-medium text-primary mb-2">Project Gallery</h4>
-              <div className="grid gap-4">
-                {selectedProject?.galleryImages.map((img, index) => (
-                  <img
-                    key={index}
-                    src={img}
-                    alt={`${selectedProject.title} screenshot ${index + 1}`}
-                    className="w-full rounded-lg object-contain"
-                  />
-                ))}
-              </div>
+              
+              {/* Main featured image */}
+              {selectedProject && (
+                <img
+                  src={selectedProject.galleryImages[0]}
+                  alt={`${selectedProject.title} - main screenshot`}
+                  className="w-full rounded-lg object-contain aspect-video"
+                />
+              )}
+
+              {/* Expandable gallery */}
+              {selectedProject && selectedProject.galleryImages.length > 1 && (
+                <>
+                  {showAllImages && (
+                    <div className="grid grid-cols-2 gap-3 animate-in fade-in-0 slide-in-from-top-4 duration-300">
+                      {selectedProject.galleryImages.slice(1).map((img, index) => (
+                        <img
+                          key={index}
+                          src={img}
+                          alt={`${selectedProject.title} screenshot ${index + 2}`}
+                          className="w-full rounded-lg object-contain aspect-video hover:scale-105 transition-transform duration-300 cursor-pointer"
+                        />
+                      ))}
+                    </div>
+                  )}
+                  <Button
+                    variant="outline"
+                    className="w-full gap-2"
+                    onClick={() => setShowAllImages(!showAllImages)}
+                  >
+                    {showAllImages ? (
+                      <>
+                        <ChevronUp size={16} />
+                        View less
+                      </>
+                    ) : (
+                      <>
+                        <ChevronDown size={16} />
+                        View more ({selectedProject.galleryImages.length - 1} pics)
+                      </>
+                    )}
+                  </Button>
+                </>
+              )}
             </div>
           </div>
         </DialogContent>

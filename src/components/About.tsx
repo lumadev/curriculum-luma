@@ -53,8 +53,8 @@ const About = () => {
                 code goes beyond just working — it needs to be clean, testable, and easy to maintain.
               </p>
               <p>
-                Beyond code, I highly value clear communication and teamwork. <span className="text-foreground font-medium">clear 
-                communication</span> and teamwork.
+                Beyond code, I highly value{" "}
+                <span className="text-foreground font-medium">clear communication</span> and teamwork.
                 I believe successful products are the result of close collaboration between engineering, product, and design, driven by clear goals and user value.
               </p>
             </div>
