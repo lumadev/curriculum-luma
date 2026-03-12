@@ -1,18 +1,19 @@
 import { Github, Linkedin, Mail, ArrowDown } from 'lucide-react';
+import { FaGithub, FaLinkedin, FaEnvelope, FaArrowDown } from "react-icons/fa";
 import profileImage from '@/assets/profile-placeholder.jpg';
 
 const Hero = () => {
   const socialLinks = [{
-    icon: Github,
+    icon: FaGithub ,
     href: 'https://github.com/lumadev',
     label: 'GitHub'
   }, {
-    icon: Linkedin,
+    icon: FaLinkedin,
     href: 'https://www.linkedin.com/in/luma-macagnan-5756055b/',
     label: 'LinkedIn'
   }, {
-    icon: Mail,
-    href: 'lumamacagnan@gmail.com',
+    icon: FaEnvelope,
+    href: "https://mail.google.com/mail/?view=cm&fs=1&to=luma.softwaredev@gmail.com",
     label: 'Email'
   }];
   return <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
@@ -44,9 +45,13 @@ const Hero = () => {
 
             {/* Social Links */}
             <div className="flex items-center justify-center lg:justify-start gap-4 mb-8 animate-fade-up opacity-0 delay-400">
-              {socialLinks.map(social => <a key={social.label} href={social.href} target="_blank" rel="noopener noreferrer" className="p-3 rounded-full bg-secondary hover:bg-secondary/80 text-muted-foreground hover:text-foreground transition-all duration-300 hover:scale-110" aria-label={social.label}>
-                  <social.icon size={20} />
-                </a>)}
+              {
+                socialLinks.map(social => 
+                  <a key={social.label} href={social.href} target="_blank" rel="noopener noreferrer" className="p-3 rounded-full bg-secondary hover:bg-secondary/80 text-muted-foreground hover:text-foreground transition-all duration-300 hover:scale-110" aria-label={social.label}>
+                    <social.icon size={20} />
+                  </a>
+                )
+              }
             </div>
 
             {/* CTA Buttons */}
