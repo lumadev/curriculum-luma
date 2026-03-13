@@ -1,7 +1,6 @@
 import { useState } from "react";
-import { ChevronDown, ChevronUp, ZoomIn, X } from "lucide-react";
+import { ZoomIn, X } from "lucide-react";
 
-import { Button } from "@/components/ui/button/button";
 import {
   Dialog,
   DialogContent,
@@ -13,6 +12,8 @@ import { Separator } from "@/components/ui/separator";
 
 import ProjectCard from "./ProjectCard";
 import ProjectsHeader from "./ProjectsHeader";
+import ExtraImagesGallery from "./ExtraImagesGallery";
+import ProjectDetailsLeft from "./ProjectDetailsLeft";
 
 interface Project {
   title: string;
@@ -25,7 +26,6 @@ interface Project {
 
 const Projects = () => {
   const [selected, setSelected] = useState<Project | null>(null);
-  const [showAllImages, setShowAllImages] = useState(false);
   const [lightboxImage, setLightboxImage] = useState<string | null>(null);
 
   const projects: Project[] = [
@@ -73,7 +73,6 @@ const Projects = () => {
         onOpenChange={() => {
           if (!lightboxImage) {
             setSelected(null);
-            setShowAllImages(false);
           }
         }}
       >
@@ -90,37 +89,12 @@ const Projects = () => {
 
             {/* LEFT */}
 
-            <div className="flex-1 space-y-4">
-
-              <div>
-                <h4 className="text-sm font-medium text-primary mb-2">
-                  About the Project
-                </h4>
-
-                <p className="text-muted-foreground">
-                  {selected?.fullDescription}
-                </p>
-              </div>
-
-              <div>
-                <h4 className="text-sm font-medium text-primary mb-2">
-                  Technologies
-                </h4>
-
-                <div className="flex flex-wrap gap-2">
-                  {selected?.tags.map((tag) => (
-                    <span
-                      key={tag}
-                      className="px-3 py-1 bg-secondary rounded-full text-sm"
-                    >
-                      {tag}
-                    </span>
-                  ))}
-                </div>
-
-              </div>
-
-            </div>
+            {selected && (
+              <ProjectDetailsLeft
+                fullDescription={selected.fullDescription}
+                tags={selected.tags}
+              />
+            )}
 
             <Separator
               orientation="vertical"
@@ -157,52 +131,13 @@ const Projects = () => {
 
               {/* EXTRA IMAGES */}
 
-              {selected && selected.galleryImages.length > 1 && (
-                  <>
-                    {showAllImages && (
-                      <div className="grid grid-cols-2 gap-3">
-                        {selected.galleryImages
-                          .slice(1)
-                          .map((img, i) => (
-                            <div
-                              key={i}
-                              className="relative group/img cursor-pointer overflow-hidden rounded-lg"
-                              onClick={() =>
-                                setLightboxImage(img)
-                              }
-                            >
-                              <img
-                                src={img}
-                                className="w-full object-contain aspect-video transition-transform duration-300 group-hover/img:scale-105"
-                              />
-                              <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover/img:opacity-100 transition-opacity duration-300 bg-background/50">
-                                <ZoomIn size={22} className="text-foreground" />
-                              </div>
-                            </div>
-                          ))}
-                      </div>
-                    )}
+              {selected && (
+                <ExtraImagesGallery
+                  images={selected.galleryImages}
+                  onSelectImage={setLightboxImage}
+                />
+              )}
 
-                    <Button
-                      variant="outline"
-                      onClick={() =>
-                        setShowAllImages(!showAllImages)
-                      }
-                    >
-                      {showAllImages ? (
-                        <>
-                          <ChevronUp size={16} />
-                          View less
-                        </>
-                      ) : (
-                        <>
-                          <ChevronDown size={16} />
-                          View more
-                        </>
-                      )}
-                    </Button>
-                  </>
-                )}
             </div>
           </div>
         </DialogContent>
