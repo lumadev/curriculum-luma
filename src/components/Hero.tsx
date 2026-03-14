@@ -5,7 +5,7 @@ import profileImage from '@/assets/profile-placeholder.jpg';
 
 const Hero = () => {
   const socialLinks = [{
-    icon: FaGithub ,
+    icon: FaGithub,
     href: 'https://github.com/lumadev',
     label: 'GitHub'
   }, {
