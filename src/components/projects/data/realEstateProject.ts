@@ -9,7 +9,7 @@ export const realEstateProject: Project = {
     "The system allows filtering properties by type, including kitnet, commercial office, house, and apartment, making the search more precise and efficient. " +
     "Users can also find properties directly on an interactive map, navigating freely and intuitively to explore different regions and available listings in real time. " +
     "The application provides a smooth and responsive experience, designed for easy navigation and fast access to property information on mobile devices.",
-  tags: ["React Native", "Node.js", "Express.js"],
+  tags: ["Ionic", "Angular", "TypeScript"],
   image: "/beehav/login.png",
   galleryImages: [
     "/beehav/land.png",

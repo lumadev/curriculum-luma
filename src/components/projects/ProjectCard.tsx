@@ -1,5 +1,6 @@
 import { Eye } from "lucide-react";
 import { Project } from "./types";
+import { useState } from "react";
 
 interface Props {
   project: Project;
@@ -7,16 +8,44 @@ interface Props {
 }
 
 const ProjectCard = ({ project, onClick }: Props) => {
+  const [isVertical, setIsVertical] = useState(false);
+
+  const handleLoad = (e: React.SyntheticEvent<HTMLImageElement>) => {
+    const img = e.currentTarget;
+
+    if (img.naturalHeight > img.naturalWidth) {
+      setIsVertical(true);
+    }
+  };
+
   return (
     <div
       className="glass-card overflow-hidden group hover:border-primary/50 transition-all duration-500 cursor-pointer"
       onClick={onClick}
     >
-      <div className="relative h-48 overflow-hidden">
+      <div
+        className={`
+          relative
+          h-48
+          overflow-hidden
+          flex
+          items-center
+          justify-center
+          ${isVertical ? "bg-white p-2" : ""}
+        `}
+      >
         <img
           src={project.image}
           alt={project.title}
-          className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+          onLoad={handleLoad}
+          className={`
+            w-full
+            h-full
+            transition-transform
+            duration-500
+            group-hover:scale-110
+            ${isVertical ? "object-contain" : "object-cover"}
+          `}
         />
 
         <div className="absolute inset-0 bg-gradient-to-t from-card to-transparent opacity-60" />
