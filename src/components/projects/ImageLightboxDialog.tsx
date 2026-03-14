@@ -1,6 +1,7 @@
 import {
   Dialog,
   DialogContent,
+  DialogTitle,
 } from "@/components/ui/dialog";
 
 import { X, ChevronLeft, ChevronRight } from "lucide-react";
@@ -36,6 +37,10 @@ const ImageLightboxDialog = ({
         className="max-w-[95vw] max-h-[95vh] bg-transparent border-none shadow-none p-0 [&>button]:hidden"
       >
         <div className="relative flex items-center justify-center">
+
+          <DialogTitle className="sr-only">
+            Image lightbox
+          </DialogTitle>
 
           {/* CLOSE */}
           <button
