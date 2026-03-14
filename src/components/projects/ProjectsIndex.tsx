@@ -1,27 +1,16 @@
 import { useState } from "react";
-import { ZoomIn, X } from "lucide-react";
 
-import {
-  Dialog,
-  DialogContent,
-  DialogHeader,
-  DialogTitle,
-} from "@/components/ui/dialog";
-
-import { Separator } from "@/components/ui/separator";
 import { projects } from "./data/index";
 import { Project } from "./data/projectTypes";
 
 import ProjectCard from "./ProjectCard";
 import ProjectsHeader from "./ProjectsHeader";
-import ExtraImagesGallery from "./ExtraImagesGallery";
-import ProjectDetailsLeft from "./ProjectDetailsLeft";
 import ProjectDetailsDialog from "./ProjectDetailsDialog";
 import ImageLightboxDialog from "./ImageLightboxDialog";
 
 const Projects = () => {
   const [selected, setSelected] = useState<Project | null>(null);
-  const [lightboxImage, setLightboxImage] = useState<string | null>(null);
+  const [lightboxIndex, setLightboxIndex] = useState<number | null>(null);
 
   return (
     <>
@@ -48,16 +37,20 @@ const Projects = () => {
       <ProjectDetailsDialog
         project={selected}
         onClose={() => {
-          if (!lightboxImage) setSelected(null);
+          if (lightboxIndex === null) {
+            setSelected(null);
+          }
         }}
-        onOpenImage={setLightboxImage}
+        onOpenImage={(index) => setLightboxIndex(index)}
       />
 
       {/* LIGHTBOX */}
 
       <ImageLightboxDialog
-        image={lightboxImage}
-        onClose={() => setLightboxImage(null)}
+        images={selected?.galleryImages ?? []}
+        index={lightboxIndex}
+        setIndex={setLightboxIndex}
+        onClose={() => setLightboxIndex(null)}
       />
     </>
   );

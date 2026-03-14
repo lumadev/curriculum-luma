@@ -15,7 +15,7 @@ import ProjectDetailsLeft from "./ProjectDetailsLeft";
 interface Props {
   project: Project | null;
   onClose: () => void;
-  onOpenImage: (img: string) => void;
+  onOpenImage: (index: number) => void;
 }
 
 const ProjectDetailsDialog = ({
@@ -36,7 +36,6 @@ const ProjectDetailsDialog = ({
           <div className="flex flex-col md:flex-row gap-6 mt-4">
 
             {/* LEFT */}
-
             <ProjectDetailsLeft
               fullDescription={project.fullDescription}
               tags={project.tags}
@@ -48,38 +47,30 @@ const ProjectDetailsDialog = ({
             />
 
             {/* RIGHT */}
-
             <div className="flex-1 space-y-4">
-
               <h4 className="text-sm font-medium text-primary">
                 Gallery
               </h4>
 
               {/* MAIN IMAGE */}
-
               <div
                 className="relative cursor-pointer rounded-lg overflow-hidden"
-                onClick={() =>
-                  onOpenImage(project.galleryImages[0])
-                }
+                onClick={() => onOpenImage(0)}
               >
                 <img
                   src={project.galleryImages[0]}
                   className="w-full aspect-video object-contain"
                 />
-
                 <div className="absolute inset-0 flex items-center justify-center opacity-0 hover:opacity-100 bg-black/40 transition">
                   <ZoomIn size={28} />
                 </div>
               </div>
 
               {/* EXTRA */}
-
               <ExtraImagesGallery
                 images={project.galleryImages}
-                onSelectImage={onOpenImage}
+                onSelectImage={(index) => onOpenImage(index)}
               />
-
             </div>
           </div>
         )}
