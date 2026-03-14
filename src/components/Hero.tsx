@@ -11,7 +11,7 @@ const Hero = () => {
   }, {
     icon: FaLinkedin,
     href: 'https://www.linkedin.com/in/luma-macagnan-5756055b/',
-    label: 'LinkedIn'
+    label: 'LinkedIn' 
   }, {
     icon: FaEnvelope,
     href: "https://mail.google.com/mail/?view=cm&fs=1&to=luma.softwaredev@gmail.com",
