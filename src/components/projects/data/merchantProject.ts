@@ -10,7 +10,7 @@ export const merchantProject: Project = {
     "Integrated into the GSurf ecosystem, the portal communicates with authentication, transaction, and settlement microservices, " +
     "replacing manual and fragmented processes with a centralized and intuitive dashboard. " +
     "It supports multi-language, role-based permissions, and advanced reports, serving both small businesses and large retail networks.",
-  tags: ["Vue.js", "Vuetify"],
+  tags: ["Vue.js", "Vuetify", "Fintech"],
   image: "/gsurf/login-merchant.png",
   galleryImages: [
     "/gsurf/logo.png"
