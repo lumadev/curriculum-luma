@@ -1,5 +1,5 @@
-import { Github, Linkedin, Mail, ArrowDown } from 'lucide-react';
-import { FaGithub, FaLinkedin, FaEnvelope, FaArrowDown } from "react-icons/fa";
+import { ArrowDown } from 'lucide-react';
+import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 import profileImage from '@/assets/profile-placeholder.jpg';
 
 const Hero = () => {

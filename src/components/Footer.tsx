@@ -1,4 +1,4 @@
-import { Github, Linkedin, Mail } from 'lucide-react';
+import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -13,29 +13,29 @@ const Footer = () => {
           {/* Social Links */}
           <div className="flex items-center gap-4">
             <a
-              href="https://github.com"
+              href="https://github.com/lumadev"
               target="_blank"
               rel="noopener noreferrer"
               className="p-2 text-muted-foreground hover:text-foreground transition-colors"
               aria-label="GitHub"
             >
-              <Github size={20} />
+              <FaGithub size={20} />
             </a>
             <a
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/in/luma-macagnan-5756055b/"
               target="_blank"
               rel="noopener noreferrer"
               className="p-2 text-muted-foreground hover:text-foreground transition-colors"
               aria-label="LinkedIn"
             >
-              <Linkedin size={20} />
+              <FaLinkedin size={20} />
             </a>
             <a
-              href="mailto:email@example.com"
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=luma.softwaredev@gmail.com"
               className="p-2 text-muted-foreground hover:text-foreground transition-colors"
               aria-label="Email"
             >
-              <Mail size={20} />
+              <FaEnvelope size={20} />
             </a>
           </div>
         </div>
