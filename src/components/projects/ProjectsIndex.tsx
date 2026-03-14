@@ -9,7 +9,8 @@ import {
 } from "@/components/ui/dialog";
 
 import { Separator } from "@/components/ui/separator";
-import { projects, Project } from "./projectsData";
+import { projects } from "./data/index";
+import { Project } from "./data/projectTypes";
 
 import ProjectCard from "./ProjectCard";
 import ProjectsHeader from "./ProjectsHeader";
