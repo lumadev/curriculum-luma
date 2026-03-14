@@ -1,5 +1,6 @@
 import { ArrowDown } from 'lucide-react';
 import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
+
 import profileImage from '@/assets/profile-placeholder.jpg';
 
 const Hero = () => {
@@ -16,7 +17,7 @@ const Hero = () => {
     href: "https://mail.google.com/mail/?view=cm&fs=1&to=luma.softwaredev@gmail.com",
     label: 'Email'
   }];
-  return <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
+  return <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20 lg:pt-32">
       {/* Gradient overlay */}
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-background/50 to-background pointer-events-none" />
 
