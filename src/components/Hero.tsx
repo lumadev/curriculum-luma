@@ -21,7 +21,7 @@ const Hero = () => {
       {/* Gradient overlay */}
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-background/50 to-background pointer-events-none" />
 
-      <div className="container mx-auto px-6 relative z-10">
+      <div className="container mx-auto px-6 relative">
         <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
           {/* Photo */}
           <div className="relative animate-fade-up order-1 lg:order-1">

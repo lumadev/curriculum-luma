@@ -57,7 +57,7 @@ const Header = () => {
 
         {/* Mobile Menu */}
         {isMobileMenuOpen && (
-          <div className="md:hidden mt-4 pb-4 animate-fade-in">
+          <div className="md:hidden mt-4 pb-4 animate-fade-in bg-background/95 backdrop-blur-lg relative z-50">
             <ul className="flex flex-col gap-4">
               {navItems.map((item) => (
                 <li key={item.label}>
