@@ -6,6 +6,7 @@ import { notifeyeProject } from "./notifeyeProject";
 import { realEstateProject } from "./realEstateProject";
 import { senaiItinerariosProject } from "./senaiItinerariosProject";
 import { mundoSenaiDocenteProject } from "./mundoSenaiDocenteProject";
+import { cinepediaProject } from "./cinepediaProject";
 
 export const projects: Project[] = [
   musicProject,
@@ -13,5 +14,6 @@ export const projects: Project[] = [
   notifeyeProject,
   senaiItinerariosProject,
   mundoSenaiDocenteProject,
-  realEstateProject
+  realEstateProject,
+  cinepediaProject
 ];
