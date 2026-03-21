@@ -39,31 +39,50 @@ const About = () => {
           {/* About Content */}
           <div className="glass-card p-8 md:p-12 mb-12">
             <div className="space-y-6 text-muted-foreground text-lg md:text-xl leading-relaxed md:leading-relaxed">
+              
               <p>
                 <span className="text-foreground font-medium pr-2 text-lg md:text-xl">
-                  Software Engineer
+                  Senior Full-Stack Engineer focused on scalable web applications
                 </span>
-                with strong focus on architecture, performance, scalability, 
-                and best coding practices. 
-                Excellent collaboration, communication, and mentoring skills. 
-                Commitment to delivering software that exceeds expectations.
-
-                A passion for developing technological solutions that make a difference. My journey 
-                in programming started 13 years ago, and since then I've been
-                specializing in creating robust and scalable applications.
+                {" "}
+                with strong expertise in architecture, performance, scalability, and clean code practices.
+                {" "}
+                I have over 14 years of experience designing and building robust, scalable, 
+                and maintainable systems using modern web technologies.
               </p>
+
               <p>
-                I have solid experience in 
+                I have extensive experience in
                 <span className="text-foreground font-medium ml-2 text-lg md:text-xl">
                   full-stack development
-                </span>, working with various modern technologies. I believe that good 
-                code goes beyond just working — it needs to be clean, testable, and easy to maintain.
+                </span>
+                {" "}
+                working with technologies such as
+                <span className="text-foreground font-medium ml-2 text-lg md:text-xl">
+                  Vue.js, TypeScript, Node.js, PHP, React, Next.js, 
+                </span>
+                {" "}
+                and modern architectures.{" "}
+                I care deeply about code quality, performance, and long-term maintainability, and I enjoy solving 
+                complex technical problems with simple and well-structured solutions.
               </p>
+
               <p>
-                Beyond code, I highly value{" "}
-                <span className="text-foreground font-medium text-lg md:text-xl">clear communication</span> and teamwork.
-                I believe successful products are the result of close collaboration between engineering, product, and design, driven by clear goals and user value.
+                Beyond code, I value{" "}
+                <span className="text-foreground font-medium text-lg md:text-xl">
+                  clear communication
+                </span>
+                {", "}
+                ownership, and collaboration.{" "}
+                I have experience working closely with engineering, product, 
+                and design teams to deliver high-quality software aligned with business goals and user needs.
               </p>
+
+              <p>
+                I am passionate about building impactful products and continuously improving 
+                both systems and development processes.
+              </p>
+
             </div>
           </div>
 
