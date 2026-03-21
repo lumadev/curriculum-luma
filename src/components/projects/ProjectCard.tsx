@@ -1,5 +1,5 @@
 import { Eye } from "lucide-react";
-import { Project } from "./types";
+import { Project } from "./data/projectTypes";
 import { useState } from "react";
 
 interface Props {

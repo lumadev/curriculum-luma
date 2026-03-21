@@ -1,4 +1,4 @@
-import { Project } from "./projectTypes";
+import { Project } from "../projectTypes";
 
 export const adminProject: Project = {
   title: "GSurf Admin Portal",
