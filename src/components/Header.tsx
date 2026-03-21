@@ -1,13 +1,16 @@
 import { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
+import { useTranslation } from "react-i18next";
 
 const navItems = [
-  { label: 'About', href: '#about' },
-  { label: 'Skills', href: '#skills' },
-  { label: 'Projects', href: '#projects' },
+  { labelKey: 'header.about', href: '#about' },
+  { labelKey: 'header.skills', href: '#skills' },
+  { labelKey: 'header.projects', href: '#projects' },
 ];
 
 const Header = () => {
+  const { t } = useTranslation()
+
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
@@ -30,9 +33,9 @@ const Header = () => {
           {/* Desktop Navigation */}
           <ul className="hidden md:flex items-center gap-8">
             {navItems.map((item) => (
-              <li key={item.label}>
+              <li key={item.labelKey}>
                 <a href={item.href} className="nav-link text-sm font-medium">
-                  {item.label}
+                  {t(item.labelKey)}
                 </a>
               </li>
             ))}
@@ -43,7 +46,7 @@ const Header = () => {
             href="#projects"
             className="hidden md:inline-flex items-center gap-2 px-5 py-2.5 bg-primary text-primary-foreground rounded-full font-medium text-sm hover:opacity-90 transition-opacity"
           >
-            View Work
+            {t("header.viewWork")}
           </a>
 
           {/* Mobile Menu Button */}
@@ -76,7 +79,7 @@ const Header = () => {
                   className="inline-flex items-center gap-2 px-5 py-2.5 bg-primary text-primary-foreground rounded-full font-medium text-sm"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
-                  View Work
+                  {t("header.viewWork")}
                 </a>
               </li>
             </ul>
