@@ -1,4 +1,4 @@
-import { Project } from "./projectTypes";
+import { Project } from "../projectTypes";
 
 export const musicProject: Project = {
   title: "Music Lesson Scheduler",
@@ -15,5 +15,17 @@ export const musicProject: Project = {
   galleryImages: [
     "/makeupProject/makeups-list.png",
     "/makeupProject/initial-page.png",
+  ],
+  role: 'Full Stack Developer',
+  roleDescription:
+    'Worked as a Full Stack Developer, responsible for the entire system architecture, including backend development with Node.js, database design, and frontend implementation with React.',
+  responsibilities: [
+    'Designed and implemented the database architecture',
+    'Developed RESTful APIs using Node.js and Express',
+    'Built the frontend using React',
+    'Integrated with Spotify API',
+    'Integrated with Google Drive API',
+    'Implemented authentication and access control',
+    'Configured deployment environment in Vercel',
   ],
 };
