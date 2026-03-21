@@ -1,4 +1,4 @@
-import { Project } from "./projectTypes";
+import { Project } from "../projectTypes";
 
 export const gmacProject: Project = {
   title: "GMAC Identity Provider",
@@ -12,7 +12,7 @@ export const gmacProject: Project = {
   tags: ["Vue.js", "Vuetify", "Authentication", "Identity Provider", "OAuth"],
   image: "/gsurf/gmac-login.png",
   galleryImages: [
-    "/gsurf/logo.png",
+    "/gsurf/gmac-login.png",
     "/gsurf/password-recovery.png"
   ],
 };
