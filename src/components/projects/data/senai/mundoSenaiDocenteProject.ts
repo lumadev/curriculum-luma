@@ -1,4 +1,4 @@
-import { Project } from "./projectTypes";
+import { Project } from "../projectTypes";
 
 export const mundoSenaiDocenteProject: Project = {
   title: "Mundo SENAI Docente",
