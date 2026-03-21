@@ -5,7 +5,7 @@ export interface Project {
   tags: string[];
   image: string;
   galleryImages: string[];
-  role: string;
-  roleDescription: string;
-  responsibilities: string[];
+  role?: string;
+  roleDescription?: string;
+  responsibilities?: string[];
 }

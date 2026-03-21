@@ -16,4 +16,19 @@ export const mundoSenaiDocenteProject: Project = {
     "/senai/msd-initial-page.png",
     "/senai/msd-profile.png"
   ],
+  role: "Lead Backend Engineer",
+  roleDescription:
+    "Worked as the lead Backend Developer, responsible for backend architecture, feature development, and database design, and also worked as QA for several months, performing testing, validation, and bug tracking.",
+  responsibilities: [
+    "Led backend development using PHP",
+    "Designed and maintained PostgreSQL database structure",
+    "Implemented gamification and business logic",
+    "Developed backend services and APIs",
+    "Maintained existing features and fixed bugs",
+    "Performed manual testing and quality assurance",
+    "Reported, tracked, and validated bugs",
+    "Participated in technical interviews and hiring process",
+    "Conducted training sessions with instructors",
+    "Collaborated with frontend and product team",
+  ],
 };

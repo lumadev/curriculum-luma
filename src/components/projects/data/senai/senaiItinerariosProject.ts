@@ -15,4 +15,15 @@ export const senaiItinerariosProject: Project = {
     "/senai/dashboard.png",
     "/senai/occupation-registration.png"
   ],
+  role: "Backend Developer",
+  roleDescription:
+    "Worked as a Backend Developer, responsible for setting up the initial project structure, developing backend features using Symfony, and designing the database architecture.",
+  responsibilities: [
+    "Set up the initial backend project structure",
+    "Developed backend features using PHP and Symfony",
+    "Designed database schema using PostgreSQL",
+    "Integrated database using Doctrine ORM",
+    "Created entities and relationships",
+    "Implemented business rules on backend",
+  ],
 };

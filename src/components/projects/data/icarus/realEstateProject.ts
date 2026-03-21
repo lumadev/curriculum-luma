@@ -19,4 +19,15 @@ export const realEstateProject: Project = {
     "/beehav/register.png",
     "/beehav/search.png"
   ],
+  role: "Lead Frontend Developer",
+  roleDescription:
+    "Worked as a Lead Frontend Developer, responsible for developing mobile application features using Ionic and Angular, focusing on user interface, navigation, and integration with Firebase services.",
+  responsibilities: [
+    "Developed mobile frontend using Ionic and Angular",
+    "Implemented UI components and navigation flow",
+    "Integrated application with Firebase",
+    "Built property search and filtering features",
+    "Implemented map-based property visualization",
+    "Maintained and fixed frontend features",
+  ],
 };

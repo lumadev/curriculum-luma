@@ -1,7 +1,7 @@
-import { Project } from "./projectTypes";
+import { Project } from "../projectTypes";
 
 export const cinepediaProject: Project = {
-  title: "Movies Catalog",
+  title: "Cinepedia",
   description:
     "Web application to manage and visualize watched movies in a catalog interface inspired by streaming platforms.",
   fullDescription:
@@ -14,5 +14,16 @@ export const cinepediaProject: Project = {
   image: "/cinepedia/movies-catalog.png",
   galleryImages: [
     "/cinepedia/movies-catalog.png"
+  ],
+  role: "Full Stack Engineer",
+  roleDescription:
+    "Worked as a Full Stack Engineer, responsible for designing and developing the entire application, including architecture, UI implementation, and performance optimization using Next.js and React.",
+  responsibilities: [
+    "Designed the system architecture",
+    "Developed frontend using React and Next.js",
+    "Implemented catalog management features",
+    "Built filtering and search functionality",
+    "Created reusable and scalable UI components",
+    "Implemented responsive layout"
   ],
 };

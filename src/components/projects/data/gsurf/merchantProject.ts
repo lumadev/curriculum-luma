@@ -19,7 +19,7 @@ export const merchantProject: Project = {
   roleDescription:
     'Worked as a Senior Frontend Engineer, acting as Tech Lead and Frontend Manager, responsible for leading the frontend architecture, mentoring developers, and coordinating the development team.',
   responsibilities: [
-    'Led the frontend architecture using Vue.js',
+    'Implemented frontend features',
     'Mentored junior and mid-level developers',
     'Acted as Tech Lead for frontend development',
     'Coordinated frontend team tasks and deliveries',

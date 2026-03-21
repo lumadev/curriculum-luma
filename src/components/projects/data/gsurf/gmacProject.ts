@@ -15,4 +15,18 @@ export const gmacProject: Project = {
     "/gsurf/gmac-login.png",
     "/gsurf/password-recovery.png"
   ],
+  role: 'Frontend Engineer, Tech Lead',
+  roleDescription:
+    'Worked as a Senior Frontend Engineer, acting as Tech Lead and Frontend Manager, responsible for leading the frontend architecture, mentoring developers, and coordinating the development team.',
+  responsibilities: [
+    'Led the frontend architecture using Vue.js',
+    'Implemented frontend features',
+    'Mentored junior and mid-level developers',
+    'Acted as Tech Lead for frontend development',
+    'Coordinated frontend team tasks and deliveries',
+    'Reviewed pull requests and enforced code standards',
+    'Collaborated with backend, QA and product teams',
+    'Managed project priorities and technical decisions',
+    'Implemented CI/CD pipeline for frontend deployment'
+  ],
 };
