@@ -1,13 +1,13 @@
 import { Project } from "./projectTypes";
 
-import { musicProject } from "./musicProject";
-import { merchantProject } from "./merchantProject";
-import { notifeyeProject } from "./notifeyeProject";
-import { realEstateProject } from "./realEstateProject";
-import { senaiItinerariosProject } from "./senaiItinerariosProject";
-import { gmacProject } from "./gmacProject";
-import { mundoSenaiDocenteProject } from "./mundoSenaiDocenteProject";
-import { cinepediaProject } from "./cinepediaProject";
+import { musicProject } from "./personal/musicProject";
+import { merchantProject } from "./gsurf/merchantProject";
+import { notifeyeProject } from "./icarus/notifeyeProject";
+import { realEstateProject } from "./icarus/realEstateProject";
+import { senaiItinerariosProject } from "./senai/senaiItinerariosProject";
+import { gmacProject } from "./gsurf/gmacProject";
+import { mundoSenaiDocenteProject } from "./senai/mundoSenaiDocenteProject";
+import { cinepediaProject } from "./personal/cinepediaProject";
 
 export const projects: Project[] = [
   musicProject,
