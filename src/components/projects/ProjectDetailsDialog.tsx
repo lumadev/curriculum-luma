@@ -37,8 +37,7 @@ const ProjectDetailsDialog = ({
 
             {/* LEFT */}
             <ProjectDetailsLeft
-              fullDescription={project.fullDescription}
-              tags={project.tags}
+              selectedProject={project}
             />
 
             <Separator
