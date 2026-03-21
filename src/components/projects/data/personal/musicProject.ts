@@ -28,4 +28,5 @@ export const musicProject: Project = {
     'Implemented authentication and access control',
     'Configured deployment environment in Vercel',
   ],
+  isFavorite: true
 };

@@ -29,4 +29,5 @@ export const merchantProject: Project = {
     'Developed scalable and reusable UI components',
     'Implemented CI/CD pipeline for frontend deployment'
   ],
+  isFavorite: true
 };

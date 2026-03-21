@@ -31,4 +31,5 @@ export const mundoSenaiDocenteProject: Project = {
     "Conducted training sessions with instructors",
     "Collaborated with frontend and product team",
   ],
+  isFavorite: true
 };

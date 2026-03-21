@@ -8,4 +8,5 @@ export interface Project {
   role?: string;
   roleDescription?: string;
   responsibilities?: string[];
+  isFavorite?: boolean;
 }

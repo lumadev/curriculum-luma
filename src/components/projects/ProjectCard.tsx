@@ -1,4 +1,4 @@
-import { Eye } from "lucide-react";
+import { Eye, Star } from "lucide-react";
 import { Project } from "./data/projectTypes";
 import { useState } from "react";
 
@@ -58,8 +58,9 @@ const ProjectCard = ({ project, onClick }: Props) => {
       </div>
 
       <div className="p-6">
-        <h3 className="font-semibold text-xl md:text-2xl mb-2">
+        <h3 className="font-display font-semibold text-xl text-foreground mb-2 flex items-center gap-2">
           {project.title}
+          {project.isFavorite && <Star size={16} className="text-primary fill-primary shrink-0" />}
         </h3>
 
         <p className="text-muted-foreground text-base md:text-lg mb-4">
