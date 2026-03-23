@@ -4,5 +4,40 @@
     "about": "About",
     "skills": "Skills",
     "projects": "Projects"
+  },
+  "about": {
+    "sectionSubtitle": "Get to Know Me",
+    "sectionTitleStart": "About",
+    "sectionTitleHighlight": "Me",
+    "description": {
+      "introStrong": "Senior Full-Stack Engineer focused on scalable web applications",
+      "introText": "with strong expertise in architecture, performance, scalability, and clean code practices. I have over 14 years of experience designing and building robust, scalable, and maintainable systems using modern web technologies.",
+      "experienceStart": "I have extensive experience in",
+      "experienceStrong": "full-stack development",
+      "experienceMiddle": "working with technologies such as",
+      "experienceTech": "Vue.js, TypeScript, Node.js, PHP, React, Next.js",
+      "experienceEnd": "and modern architectures. I care deeply about code quality, performance, and long-term maintainability, and I enjoy solving complex technical problems with simple and well-structured solutions.",
+      "communicationStart": "Beyond code, I value",
+      "communicationStrong": "clear communication",
+      "communicationEnd": ", ownership, and collaboration. I have experience working closely with engineering, product, and design teams to deliver high-quality software aligned with business goals and user needs."
+    },
+    "highlights": {
+      "cleanCode": {
+        "title": "Clean Code",
+        "description": "Well-documented and maintainable code"
+      },
+      "performance": {
+        "title": "Performance",
+        "description": "Optimized applications for maximum efficiency"
+      },
+      "collaboration": {
+        "title": "Collaboration",
+        "description": "Teamwork and effective communication"
+      },
+      "innovation": {
+        "title": "Innovation",
+        "description": "Always exploring new technologies and solutions"
+      }
+    }
   }
 }
