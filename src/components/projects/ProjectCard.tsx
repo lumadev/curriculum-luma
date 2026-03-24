@@ -1,6 +1,7 @@
 import { Eye, Star } from "lucide-react";
 import { Project } from "./data/projectTypes";
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 
 interface Props {
   project: Project;
@@ -9,6 +10,8 @@ interface Props {
 
 const ProjectCard = ({ project, onClick }: Props) => {
   const [isVertical, setIsVertical] = useState(false);
+
+  const { t } = useTranslation();
 
   const handleLoad = (e: React.SyntheticEvent<HTMLImageElement>) => {
     const img = e.currentTarget;
@@ -59,12 +62,12 @@ const ProjectCard = ({ project, onClick }: Props) => {
 
       <div className="p-6">
         <h3 className="font-display font-semibold text-xl text-foreground mb-2 flex items-center gap-2">
-          {project.title}
+          {t(project.title)} 
           {project.isFavorite && <Star size={16} className="text-primary fill-primary shrink-0" />}
         </h3>
 
         <p className="text-muted-foreground text-base md:text-lg mb-4">
-          {project.description}
+          {t(project.description)}
         </p>
 
         <div className="flex flex-wrap gap-2">
