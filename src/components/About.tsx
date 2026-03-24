@@ -38,16 +38,16 @@ const About = () => {
 
           {/* Section Header */}
           <div className="text-center mb-16">
-            <p className="text-primary font-medium mb-2 text-lg md:text-xl">
-              {t("about.sectionSubtitle")}
-            </p>
-
             <h2 className="section-title text-3xl md:text-5xl">
               {t("about.sectionTitleStart")}{" "}
               <span className="gradient-text">
                 {t("about.sectionTitleHighlight")}
               </span>
             </h2>
+
+            <p className="text-primary font-medium mb-2 text-lg md:text-xl">
+              {t("about.sectionSubtitle")}
+            </p>
           </div>
 
           {/* About Content */}
@@ -57,14 +57,14 @@ const About = () => {
               <p>
                 <span className="text-foreground font-medium pr-2 text-lg md:text-xl">
                   {t("about.description.introStrong")}
-                </span>{" "}
+                </span>
                 {t("about.description.introText")}
               </p>
 
               <p>
                 {t("about.description.experienceStart")}{" "}
                 <span className="text-foreground font-medium ml-2 text-lg md:text-xl">
-                  {t("about.description.experienceStrong")}
+                  {t("about.description.experienceStrong")},
                 </span>{" "}
                 {t("about.description.experienceMiddle")}
                 <span className="text-foreground font-medium ml-2 text-lg md:text-xl">
