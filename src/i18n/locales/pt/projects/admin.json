@@ -1,0 +1,17 @@
+{
+  "title": "Portal Administrativo GSurf",
+  "description": "Portal interno de backoffice para gerenciamento centralizado de parceiros, usuários, permissões e configurações do ecossistema de pagamentos.",
+  "fullDescription": "Portal administrativo utilizado como backoffice central do ecossistema de pagamentos GSurf, responsável pelo gerenciamento de parceiros, subadquirentes, usuários, permissões, rotas de liquidação, integrações com gateways e arquivos regulatórios. O sistema fornece uma interface unificada para configurar múltiplos parceiros, cada um com regras de negócio e políticas de acesso independentes. Administradores podem configurar módulos de pagamento, controlar perfis de usuário com permissões granulares, gerenciar bandeiras e adquirentes, definir regras de liquidação, enviar arquivos regulatórios e auditar eventos do sistema. O portal integra-se com microsserviços de autenticação, transações, liquidação e gateway, permitindo controle total da infraestrutura de subadquirência através de um dashboard interno seguro.",
+  "role": "Engenheiro Frontend, Tech Lead",
+  "roleDescription": "Atuou como Engenheiro Frontend Sênior, exercendo função de Tech Lead e Frontend Manager, responsável pela arquitetura frontend, mentoria de desenvolvedores e coordenação da equipe.",
+  "responsibilities": [
+    "Implementação de funcionalidades frontend",
+    "Mentoria de desenvolvedores júnior e pleno",
+    "Atuação como Tech Lead frontend",
+    "Coordenação das tarefas do time frontend",
+    "Revisão de pull requests e padronização de código",
+    "Colaboração com backend, QA e produto",
+    "Gestão de prioridades e decisões técnicas",
+    "Implementação de pipeline CI/CD para frontend"
+  ]
+}
