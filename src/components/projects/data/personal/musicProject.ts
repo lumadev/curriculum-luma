@@ -1,32 +1,25 @@
 import { Project } from "../projectTypes";
 
 export const musicProject: Project = {
-  title: "Music Lesson Scheduler",
-  description:
-    "Application created to simplify class replacement management for music teachers.",
-  fullDescription:
-    "Application created to help music teachers manage students, " +
-    "class replacements, and lesson organization in a centralized and intuitive interface. " +
-    "The system improves scheduling control, tracks student progress through assigned songs, " +
-    "and keeps event dates organized — all in one place. " +
-    "It is fully responsive, providing a seamless experience across desktop, tablet, and mobile devices.",
+  title: "music.title",
+  description: "music.description",
+  fullDescription: "music.fullDescription",
   tags: ["React", "Node.js", "Express.js"],
   image: "/makeupProject/makeups-login.png",
   galleryImages: [
     "/makeupProject/makeups-list.png",
     "/makeupProject/initial-page.png",
   ],
-  role: 'Full Stack Developer',
-  roleDescription:
-    'Worked as a Full Stack Developer, responsible for the entire system architecture, including backend development with Node.js, database design, and frontend implementation with React.',
+  role: "music.role",
+  roleDescription: "music.roleDescription",
   responsibilities: [
-    'Designed and implemented the database architecture',
-    'Developed RESTful APIs using Node.js and Express',
-    'Built the frontend using React',
-    'Integrated with Spotify API',
-    'Integrated with Google Drive API',
-    'Implemented authentication and access control',
-    'Configured deployment environment in Vercel',
+    "music.responsibilities.0",
+    "music.responsibilities.1",
+    "music.responsibilities.2",
+    "music.responsibilities.3",
+    "music.responsibilities.4",
+    "music.responsibilities.5",
+    "music.responsibilities.6",
   ],
-  isFavorite: true
+  isFavorite: true,
 };
