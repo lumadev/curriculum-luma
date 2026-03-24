@@ -69,5 +69,10 @@
     "accessibility": {
       "scrollToAbout": "Scroll to about section"
     }
+  },
+  "projects": {
+    "sectionSubtitle": "Portfolio",
+    "sectionTitle": "Projects",
+    "sectionDescription": "Some of the projects I've worked on"
   }
 }
