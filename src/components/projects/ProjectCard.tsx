@@ -62,7 +62,7 @@ const ProjectCard = ({ project, onClick }: Props) => {
 
       <div className="p-6">
         <h3 className="font-display font-semibold text-xl text-foreground mb-2 flex items-center gap-2">
-          {t(project.title)} 
+          {t(project.title)}
           {project.isFavorite && <Star size={16} className="text-primary fill-primary shrink-0" />}
         </h3>
 

@@ -1,11 +1,14 @@
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { Project } from "./data/projectTypes";
+import { useTranslation } from "react-i18next";
 
 interface Props {
   selectedProject: Project;
 }
 
 const ProjectDetailsLeft = ({ selectedProject }: Props) => {
+  const { t } = useTranslation();
+
   return (
     <Tabs defaultValue="about" className="flex-1">
       <TabsList className="w-full bg-transparent border-b border-border rounded-none h-auto p-0 gap-4">
@@ -31,7 +34,7 @@ const ProjectDetailsLeft = ({ selectedProject }: Props) => {
         <div>
           <h4 className="text-sm font-medium text-primary mb-2">About the Project</h4>
           <p className="text-muted-foreground leading-relaxed">
-            {selectedProject?.fullDescription}
+            {t(selectedProject.fullDescription)} 
           </p>
         </div>
         <div>
@@ -54,11 +57,11 @@ const ProjectDetailsLeft = ({ selectedProject }: Props) => {
           <div>
             <div className="flex items-center gap-2 mb-2">
               <span className="px-3 py-1 bg-primary/10 text-primary text-xs font-medium rounded-full">
-                {selectedProject?.role}
+                {t(selectedProject.role)} 
               </span>
             </div>
             <p className="text-muted-foreground leading-relaxed">
-              {selectedProject?.roleDescription}
+              {t(selectedProject.roleDescription)} 
             </p>
           </div>
           <div>
@@ -67,7 +70,7 @@ const ProjectDetailsLeft = ({ selectedProject }: Props) => {
               {selectedProject?.responsibilities.map((item, i) => (
                 <li key={i} className="flex items-start gap-2 text-sm text-muted-foreground">
                   <span className="mt-1.5 h-1.5 w-1.5 rounded-full bg-primary shrink-0" />
-                  {item}
+                  {t(item)}
                 </li>
               ))}
             </ul>

@@ -7,8 +7,9 @@ import {
 
 import { Separator } from "@/components/ui/separator";
 import { ZoomIn } from "lucide-react";
-
 import { Project } from "./data/projectTypes";
+import { useTranslation } from "react-i18next";
+
 import ExtraImagesGallery from "./ExtraImagesGallery";
 import ProjectDetailsLeft from "./ProjectDetailsLeft";
 
@@ -23,12 +24,14 @@ const ProjectDetailsDialog = ({
   onClose,
   onOpenImage,
 }: Props) => {
+  const { t } = useTranslation();
+
   return (
     <Dialog open={!!project} onOpenChange={onClose}>
       <DialogContent className="max-w-5xl max-h-[90vh] overflow-y-auto">
         <DialogHeader>
           <DialogTitle className="text-2xl font-display">
-            {project?.title}
+            {t(project?.title)}
           </DialogTitle>
         </DialogHeader>
 
