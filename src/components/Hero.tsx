@@ -1,9 +1,12 @@
 import { ArrowDown } from 'lucide-react';
 import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
+import { useTranslation } from "react-i18next";
 
 import profileImage from '@/assets/profile-placeholder.jpg';
 
 const Hero = () => {
+  const { t } = useTranslation();
+
   const socialLinks = [{
     icon: FaGithub,
     href: 'https://github.com/lumadev',
@@ -33,16 +36,22 @@ const Hero = () => {
 
           {/* Content */}
           <div className="flex-1 text-center lg:text-left order-2 lg:order-2">
+            {/* Software Engineer */}
             <p className="text-primary font-medium mb-4 animate-fade-up opacity-0 delay-100">
-              Software Engineer
+              {t("hero.jobTitle")}
             </p>
+            {/* Let's build something together */}
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold mb-6 animate-fade-up opacity-0 delay-200">
-              Let's build{' '}
-              <span className="gradient-text">something</span>
+              {t("hero.heading.buildPrefix")}{" "}
+              <span className="gradient-text">
+                {t("hero.heading.buildHighlight")}
+              </span>
               <br />
-              together
+              {t("hero.heading.buildSuffix")}
             </h1>
-            <p className="text-lg text-muted-foreground max-w-xl mb-8 animate-fade-up opacity-0 delay-300">Passionate developer focused on building elegant and scalable solutions. With experience in systems architecture and full-stack development, I turn complex ideas into reliable, high-quality digital products.</p>
+            <p className="text-lg text-muted-foreground max-w-xl mb-8 animate-fade-up opacity-0 delay-300">
+              {t("hero.description")}
+            </p>
 
             {/* Social Links */}
             <div className="flex items-center justify-center lg:justify-start gap-4 mb-8 animate-fade-up opacity-0 delay-400">
@@ -57,11 +66,8 @@ const Hero = () => {
 
             {/* CTA Buttons */}
             <div className="flex flex-wrap items-center justify-center lg:justify-start gap-4 animate-fade-up opacity-0 delay-500">
-              <a href="#contact" className="px-8 py-3 bg-primary text-primary-foreground rounded-full font-medium hover:opacity-90 transition-all duration-300 hover:scale-105">
-                Get in Touch
-              </a>
               <a href="#projects" className="px-8 py-3 border border-border rounded-full font-medium text-foreground hover:bg-secondary transition-all duration-300">
-                View Projects
+                {t("hero.actions.checkProjects")}
               </a>
             </div>
           </div>

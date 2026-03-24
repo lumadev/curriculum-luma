@@ -39,5 +39,35 @@
         "description": "Always exploring new technologies and solutions"
       }
     }
+  },
+  "skills": {
+    "tech": "Tech",
+    "stack": "Stack",
+    "description": "Tools and technologies I use to build modern and scalable solutions",
+    "extra": {
+      "aiTools": "AI Tools",
+      "ddd": "Domain-Driven Design",
+      "ci": "CI/CD",
+      "agile": "Agile / Scrum",
+      "tests": "Unit / Functional Tests",
+      "security": "Web Security",
+      "rest": "REST APIs",
+      "patterns": "Design Patterns"
+    }
+  },
+  "hero": {
+    "jobTitle": "Software Engineer",
+    "heading": {
+      "buildPrefix": "Let's build",
+      "buildHighlight": "something",
+      "buildSuffix": "together"
+    },
+    "description": "Passionate developer focused on building elegant and scalable solutions. With experience in systems architecture and full-stack development, I turn complex ideas into reliable, high-quality digital products.",
+    "actions": {
+      "checkProjects": "View Projects"
+    },
+    "accessibility": {
+      "scrollToAbout": "Scroll to about section"
+    }
   }
 }

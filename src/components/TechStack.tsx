@@ -10,7 +10,11 @@ import {
   SiGit 
 } from 'react-icons/si';
 
+import { useTranslation } from "react-i18next";
+
 const TechStack = () => {
+  const { t } = useTranslation();
+
   const technologies = [
     { name: 'Vue.js', icon: SiVuedotjs },
     { name: 'Node.js', icon: SiNodedotjs },
@@ -31,12 +35,14 @@ const TechStack = () => {
       <div className="container mx-auto px-6 relative z-10">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <p className="text-primary font-medium mb-2 text-lg md:text-xl">Technologies</p>
           <h2 className="section-title text-3xl md:text-5xl">
-            Tech <span className="gradient-text">Stack</span>
+            {t("skills.tech")}{" "}
+            <span className="gradient-text">
+              {t("skills.stack")}
+            </span>
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto mt-4 text-lg md:text-xl">
-            Tools and technologies I use to create amazing solutions
+            {t("skills.description")}
           </p>
         </div>
 
@@ -67,14 +73,14 @@ const TechStack = () => {
         {/* Additional skills grid */}
         <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-4 max-w-3xl mx-auto">
           {[
-            'AI Tools', 
-            'Domain-Driven Design',
-            'CI/CD',
-            'Agile/Scrum',
-            'Unit/Functional Tests',
-            'Web Security',
-            'REST APIs',
-            'Design Patterns'
+            t("skills.extra.aiTools"),
+            t("skills.extra.ddd"),
+            t("skills.extra.ci"),
+            t("skills.extra.agile"),
+            t("skills.extra.tests"),
+            t("skills.extra.security"),
+            t("skills.extra.rest"),
+            t("skills.extra.patterns")
           ].map((skill) => (
             <div
               key={skill}

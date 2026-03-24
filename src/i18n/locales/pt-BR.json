@@ -6,20 +6,20 @@
     "projects": "Projetos"
   },
   "about": {
-    "sectionSubtitle": "Conheça um pouco mais do meu trabalho",
+    "sectionSubtitle": "Conheça um pouco mais sobre meu trabalho",
     "sectionTitleStart": "Sobre",
     "sectionTitleHighlight": "",
     "description": {
-      "introStrong": "Engenheiro Full-Stack Sênior focado em aplicações web escaláveis",
-      "introText": "com forte experiência em arquitetura, performance, escalabilidade e boas práticas de código limpo. Tenho mais de 14 anos de experiência projetando e desenvolvendo sistemas robustos, escaláveis e de fácil manutenção utilizando tecnologias web modernas.",
+      "introStrong": "Engenheiro Full-Stack Sênior focado em aplicações web escaláveis,",
+      "introText": "com forte experiência em arquitetura, performance, escalabilidade e boas práticas de código limpo. Tenho mais de 14 anos de experiência projetando e desenvolvendo sistemas robustos, escaláveis e de fácil manutenção, utilizando tecnologias web modernas.",
       "experienceStart": "Tenho ampla experiência em",
       "experienceStrong": "desenvolvimento full-stack",
       "experienceMiddle": "trabalhando com tecnologias como",
       "experienceTech": "Vue.js, TypeScript, Node.js, PHP, React, Next.js",
-      "experienceEnd": "e arquiteturas modernas. Me preocupo sobre a qualidade do código, performance e manutenção a longo prazo, e gosto de resolver problemas técnicos complexos com soluções simples e bem estruturadas.",
+      "experienceEnd": "e arquiteturas modernas. Me preocupo com a qualidade do código, performance e manutenção a longo prazo, e gosto de resolver problemas técnicos complexos com soluções simples e bem estruturadas.",
       "communicationStart": "Além do código, valorizo",
       "communicationStrong": "comunicação clara",
-      "communicationEnd": ", responsabilidade e colaboração. Tenho experiência trabalhando junto com times de engenharia, produto e design para entregar software de alta qualidade alinhado com os objetivos do negócio e as necessidades dos usuários."
+      "communicationEnd": ", responsabilidade e colaboração. Tenho experiência trabalhando junto com times de desenvolvimento, produto e design para entregar software de alta qualidade, alinhado com os objetivos do negócio e as necessidades dos usuários."
     },
     "highlights": {
       "cleanCode": {
@@ -38,6 +38,36 @@
         "title": "Inovação",
         "description": "Sempre explorando novas tecnologias e soluções"
       }
+    }
+  },
+  "skills": {
+    "tech": "Tech",
+    "stack": "Stack",
+    "description": "Ferramentas e tecnologias que utilizo para criar soluções modernas e escaláveis",
+    "extra": {
+      "aiTools": "Ferramentas de IA",
+      "ddd": "Domain-Driven Design",
+      "ci": "CI/CD",
+      "agile": "Agile / Scrum",
+      "tests": "Testes Unitários / Funcionais",
+      "security": "Segurança Web",
+      "rest": "APIs REST",
+      "patterns": "Design Patterns"
+    }
+  },
+  "hero": {
+    "jobTitle": "Engenheiro de Software",
+    "heading": {
+      "buildPrefix": "Vamos construir",
+      "buildHighlight": "algo",
+      "buildSuffix": "juntos"
+    },
+    "description": "Desenvolvedor apaixonado por criar soluções elegantes e escaláveis. Com experiência em arquitetura de sistemas e desenvolvimento full-stack, transformo ideias complexas em produtos digitais confiáveis e de alta qualidade.",
+    "actions": {
+      "checkProjects": "Ver projetos"
+    },
+    "accessibility": {
+      "scrollToAbout": "Ir para seção sobre"
     }
   }
 }
