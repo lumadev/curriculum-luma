@@ -28,4 +28,5 @@ export const adminProject: Project = {
     "admin.responsibilities.6",
     "admin.responsibilities.7",
   ],
+  isFavorite: false
 };
