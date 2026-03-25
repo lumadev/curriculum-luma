@@ -1,6 +1,7 @@
 import { Project } from "../projectTypes";
 
 export const gmacProject: Project = {
+  id: "gmac",
   title: "gmac.title",
   description: "gmac.description",
   fullDescription: "gmac.fullDescription",
@@ -11,16 +12,5 @@ export const gmacProject: Project = {
     "/gsurf/password-recovery.png",
   ],
   role: "gmac.role",
-  roleDescription: "gmac.roleDescription",
-  responsibilities: [
-    "gmac.responsibilities.0",
-    "gmac.responsibilities.1",
-    "gmac.responsibilities.2",
-    "gmac.responsibilities.3",
-    "gmac.responsibilities.4",
-    "gmac.responsibilities.5",
-    "gmac.responsibilities.6",
-    "gmac.responsibilities.7",
-    "gmac.responsibilities.8",
-  ],
+  roleDescription: "gmac.roleDescription"
 };

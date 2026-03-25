@@ -1,6 +1,7 @@
 import { Project } from "../projectTypes";
 
 export const senaiItinerariosProject: Project = {
+  id: "senaiItinerarios",
   title: "senaiItinerarios.title",
   description: "senaiItinerarios.description",
   fullDescription: "senaiItinerarios.fullDescription",
@@ -12,13 +13,5 @@ export const senaiItinerariosProject: Project = {
   ],
   role: "senaiItinerarios.role",
   roleDescription: "senaiItinerarios.roleDescription",
-  responsibilities: [
-    "senaiItinerarios.responsibilities.0",
-    "senaiItinerarios.responsibilities.1",
-    "senaiItinerarios.responsibilities.2",
-    "senaiItinerarios.responsibilities.3",
-    "senaiItinerarios.responsibilities.4",
-    "senaiItinerarios.responsibilities.5"
-  ],
   isFavorite: false
 };

@@ -1,6 +1,7 @@
 import { Project } from "../projectTypes";
 
 export const adminProject: Project = {
+  id: 'admin',
   title: "admin.title",
   description: "admin.description",
   fullDescription: "admin.fullDescription",
@@ -18,15 +19,5 @@ export const adminProject: Project = {
   galleryImages: ["/gsurf/admin-login.png"],
   role: "admin.role",
   roleDescription: "admin.roleDescription",
-  responsibilities: [
-    "admin.responsibilities.0",
-    "admin.responsibilities.1",
-    "admin.responsibilities.2",
-    "admin.responsibilities.3",
-    "admin.responsibilities.4",
-    "admin.responsibilities.5",
-    "admin.responsibilities.6",
-    "admin.responsibilities.7",
-  ],
   isFavorite: false
 };
