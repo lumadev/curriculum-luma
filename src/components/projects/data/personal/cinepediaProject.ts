@@ -1,29 +1,20 @@
 import { Project } from "../projectTypes";
 
 export const cinepediaProject: Project = {
-  title: "Cinepedia",
-  description:
-    "Web application to manage and visualize watched movies in a catalog interface inspired by streaming platforms.",
-  fullDescription:
-    "Web application developed to allow users to manage and visualize movies they have already watched through a modern catalog interface inspired by streaming platforms like Netflix. " +
-    "The system provides features for movie registration, editing, search, and organization by date, category, and genre. " +
-    "Users can browse their personal collection in a visual grid layout with posters, release dates, and categories, making navigation intuitive and fast. " +
-    "The application includes filtering, search bar, and dynamic rendering for large lists, replacing manual notes with a centralized and user-friendly dashboard. " +
-    "Designed with a dark theme and responsive layout, the project focuses on usability, performance, and clean UI patterns commonly used in entertainment platforms.",
+  title: "cinepedia.title",
+  description: "cinepedia.description",
+  fullDescription: "cinepedia.fullDescription",
   tags: ["Next.js", "TypeScript", "React", "Catalog"],
   image: "/cinepedia/movies-catalog.png",
-  galleryImages: [
-    "/cinepedia/movies-catalog.png"
-  ],
-  role: "Full Stack Engineer",
-  roleDescription:
-    "Worked as a Full Stack Engineer, responsible for designing and developing the entire application, including architecture, UI implementation, and performance optimization using Next.js and React.",
+  galleryImages: ["/cinepedia/movies-catalog.png"],
+  role: "cinepedia.role",
+  roleDescription: "cinepedia.roleDescription",
   responsibilities: [
-    "Designed the system architecture",
-    "Developed frontend using React and Next.js",
-    "Implemented catalog management features",
-    "Built filtering and search functionality",
-    "Created reusable and scalable UI components",
-    "Implemented responsive layout"
+    "cinepedia.responsibilities.0",
+    "cinepedia.responsibilities.1",
+    "cinepedia.responsibilities.2",
+    "cinepedia.responsibilities.3",
+    "cinepedia.responsibilities.4",
+    "cinepedia.responsibilities.5",
   ],
 };

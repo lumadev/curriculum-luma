@@ -1,0 +1,16 @@
+{
+  "title": "Cinepedia",
+  "description": "Aplicação web para gerenciar e visualizar filmes assistidos em uma interface de catálogo inspirada em plataformas de streaming.",
+  "fullDescription": "Aplicação web desenvolvida para permitir que usuários gerenciem e visualizem filmes já assistidos através de uma interface moderna inspirada em plataformas de streaming como Netflix. O sistema oferece funcionalidades de cadastro, edição, busca e organização de filmes por data, categoria e gênero. Os usuários podem navegar pela coleção pessoal em um layout de grade com pôsteres, datas de lançamento e categorias, tornando a navegação intuitiva e rápida. A aplicação inclui filtros, barra de busca e renderização dinâmica para grandes listas, substituindo anotações manuais por um dashboard centralizado e amigável. Desenvolvido com tema escuro e layout responsivo, o projeto foca em usabilidade, performance e padrões de UI modernos utilizados em plataformas de entretenimento.",
+  "role": "Engenheiro Full Stack",
+  "roleDescription": "Atuou como Engenheiro Full Stack, responsável por projetar e desenvolver toda a aplicação, incluindo arquitetura, implementação de interface e otimização de performance utilizando Next.js e React.",
+  "responsibilities": [
+    "Definição da arquitetura do sistema",
+    "Desenvolvimento do frontend com React e Next.js",
+    "Implementação de funcionalidades de catálogo",
+    "Criação de sistema de filtros e busca",
+    "Desenvolvimento de componentes reutilizáveis e escaláveis",
+    "Implementação de layout responsivo",
+    "Configuração do ambiente de deploy na Vercel"
+  ]
+}
