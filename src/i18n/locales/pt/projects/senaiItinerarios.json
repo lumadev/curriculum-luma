@@ -3,7 +3,7 @@
   "description": "Sistema web desenvolvido para gerenciamento de itinerários nacionais de formação, ocupações e áreas tecnológicas.",
   "fullDescription": "Sistema web desenvolvido para o SENAI para gerenciar a estrutura de Itinerários Nacionais, permitindo a administração de áreas tecnológicas, ocupações, itinerários e documentos relacionados através de uma interface centralizada. A plataforma permite cadastrar e editar ocupações, organizar áreas por setor industrial, controlar versões do sistema e gerenciar documentos complementares utilizados na estrutura educacional. O sistema também fornece dashboards, relatórios, fluxos de aprovação e gerenciamento de usuários, facilitando a manutenção do catálogo oficial de itinerários nacionais. Construído como uma plataforma administrativa interna, o sistema foca em organização, confiabilidade e facilidade de manutenção, proporcionando um ambiente estável para gerenciar grande volume de dados estruturados.",
   "role": "Desenvolvedor Backend",
-  "roleDescription": "Atuei como Desenvolvedor Backend, responsável pela arquitetura inicial, desenvolvimento com Symfony, modelagem em PostgreSQL e automação da inserção de dados, reduzindo o tempo de cadastro de um dia para cerca de duas horas.",
+  "roleDescription": "Atuou como Desenvolvedor Backend, responsável pela arquitetura inicial, desenvolvimento com Symfony, modelagem em PostgreSQL e automação da inserção de dados, reduzindo o tempo de cadastro de um dia para cerca de duas horas.",
   "responsibilities": [
     "Configuração inicial da estrutura backend",
     "Desenvolvimento de funcionalidades com PHP e Symfony",

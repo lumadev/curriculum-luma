@@ -3,7 +3,7 @@
   "description": "Aplicação criada para simplificar o gerenciamento de reposições de aula para professores de música.",
   "fullDescription": "Aplicação desenvolvida para ajudar professores de música a gerenciar alunos, reposições de aula e organização das músicas em uma interface centralizada e intuitiva. O sistema melhora o controle de agenda, acompanha o progresso dos alunos através das músicas atribuídas e mantém as datas de evento organizadas em um único lugar. É totalmente responsivo, proporcionando uma experiência fluida em desktop, tablet e dispositivos móveis.",
   "role": "Desenvolvedora Full Stack",
-  "roleDescription": "Atuou como Desenvolvedora Full Stack, responsável por toda a arquitetura do sistema, incluindo desenvolvimento backend com Node.js, modelagem de banco de dados e implementação do frontend com React.",
+  "roleDescription": "Atuou como Desenvolvedor Full Stack, responsável por toda a arquitetura do sistema, incluindo desenvolvimento backend com Node.js, modelagem de banco de dados e implementação do frontend com React.",
   "responsibilities": [
     "Modelagem e implementação da arquitetura do banco de dados",
     "Desenvolvimento de APIs REST com Node.js e Express",

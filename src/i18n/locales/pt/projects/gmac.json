@@ -2,8 +2,8 @@
   "title": "GMAC Identity Provider",
   "description": "Portal centralizado de autenticação do ecossistema GSurf, atuando como um provedor de identidade para múltiplas aplicações parceiras.",
   "fullDescription": "Aplicação web desenvolvida como o Centro de Autenticação Multiaplicações da GSurf (GMAC), responsável pelo gerenciamento centralizado de identidade e acesso em todo o ecossistema GSurf. O sistema autentica usuários, gerencia autenticação multifator (MFA/TOTP), recuperação de senha, cadastro de usuários e redireciona usuários autenticados para aplicações parceiras utilizando fluxos semelhantes ao OAuth. Suporta múltiplos contextos de parceiros, como Brasil e Argentina, oferece políticas de segurança unificadas, internacionalização e integração com microsserviços de autenticação. A aplicação garante uma experiência de login consistente, políticas de senha robustas, proteção contra ataques de força bruta e integração fluida para novos portais na plataforma.",
-  "role": "Engenheira Frontend, Tech Lead",
-  "roleDescription": "Atuou como Engenheira Frontend Sênior, exercendo função de Tech Lead e Frontend Manager, responsável por liderar a arquitetura frontend, mentorar desenvolvedores e coordenar a equipe.",
+  "role": "Engenheiro Frontend, Tech Lead",
+  "roleDescription": "Atuou como Engenheiro Frontend Sênior, exercendo função de Tech Lead e Frontend Manager, responsável por liderar a arquitetura frontend, mentorar desenvolvedores e coordenar a equipe.",
   "responsibilities": [
     "Liderança da arquitetura frontend com Vue.js",
     "Implementação de funcionalidades frontend",
