@@ -1,0 +1,18 @@
+{
+  "title": "Portal do Comerciante",
+  "description": "Aplicação web para comerciantes gerenciarem pagamentos, recebíveis e operações financeiras em uma única plataforma.",
+  "fullDescription": "Aplicação web desenvolvida para fornecer aos comerciantes uma plataforma completa para gerenciamento de transações financeiras e operacionais de pagamentos. O sistema permite acompanhamento de vendas, agendamento de recebíveis, gestão de estornos, geração de links de pagamento e controle de terminais. Integrado ao ecossistema GSurf, o portal se comunica com microsserviços de autenticação, transações e liquidação, substituindo processos manuais e fragmentados por um dashboard centralizado e intuitivo. Suporta múltiplos idiomas, permissões baseadas em papéis e relatórios avançados, atendendo desde pequenos negócios até grandes redes de varejo.",
+  "role": "Engenheiro Frontend, Tech Lead",
+  "roleDescription": "Atuou como Engenheiro Frontend Sênior, exercendo função de Tech Lead e Frontend Manager, responsável por liderar a arquitetura frontend, mentorar desenvolvedores e coordenar a equipe.",
+  "responsibilities": [
+    "Implementação de funcionalidades frontend",
+    "Mentoria de desenvolvedores júnior e pleno",
+    "Atuação como Tech Lead frontend",
+    "Coordenação das tarefas e entregas do time frontend",
+    "Revisão de pull requests e padronização de código",
+    "Colaboração com backend, QA e produto",
+    "Gestão de prioridades e decisões técnicas",
+    "Desenvolvimento de componentes reutilizáveis e escaláveis",
+    "Implementação de pipeline CI/CD para deploy frontend"
+  ]
+}
