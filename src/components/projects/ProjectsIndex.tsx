@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-import { projects } from "./data/index";
+import { projectsData } from "./data/index";
 import { Project } from "./data/projectTypes";
 
 import ProjectCard from "./ProjectCard";
@@ -20,9 +20,9 @@ const Projects = () => {
           <ProjectsHeader />
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {projects.map((project) => (
+            {projectsData.map((project) => (
               <ProjectCard
-                key={project.title}
+                key={project.image}
                 project={project}
                 onClick={() => setSelected(project)}
               />

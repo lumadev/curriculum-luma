@@ -10,7 +10,7 @@ import { adminProject } from "./gsurf/adminProject";
 import { realEstateProject } from "./icarus/realEstateProject";
 import { cinepediaProject } from "./personal/cinepediaProject";
 
-export const projects: Project[] = [
+export const projectsData: Project[] = [
   musicProject,
   merchantProject,
   mundoSenaiDocenteProject,
