@@ -1,14 +1,7 @@
 import { Project } from "../projectTypes";
 
 export const realEstateProject: Project = {
-  title: "Real Estate Finder",
-  description:
-    "Mobile application developed to search and explore real estate properties in a simple and intuitive way.",
-  fullDescription:
-    "Mobile application created to help users search, filter, and explore real estate properties through a modern and intuitive interface, available for both iOS and Android devices. " +
-    "The system allows filtering properties by type, including kitnet, commercial office, house, and apartment, making the search more precise and efficient. " +
-    "Users can also find properties directly on an interactive map, navigating freely and intuitively to explore different regions and available listings in real time. " +
-    "The application provides a smooth and responsive experience, designed for easy navigation and fast access to property information on mobile devices.",
+  id: "realEstate",
   tags: ["Ionic", "Angular", "TypeScript", "Firebase"],
   image: "/beehav/login.png",
   galleryImages: [
@@ -18,16 +11,5 @@ export const realEstateProject: Project = {
     "/beehav/pin.png",
     "/beehav/register.png",
     "/beehav/search.png"
-  ],
-  role: "Lead Frontend Developer",
-  roleDescription:
-    "Worked as a Lead Frontend Developer, responsible for developing mobile application features using Ionic and Angular, focusing on user interface, navigation, and integration with Firebase services.",
-  responsibilities: [
-    "Developed mobile frontend using Ionic and Angular",
-    "Implemented UI components and navigation flow",
-    "Integrated application with Firebase",
-    "Built property search and filtering features",
-    "Implemented map-based property visualization",
-    "Maintained and fixed frontend features",
   ],
 };

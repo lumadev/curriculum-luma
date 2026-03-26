@@ -1,0 +1,15 @@
+{
+  "title": "Buscador de Imóveis",
+  "description": "Aplicativo móvel desenvolvido para buscar e explorar imóveis de forma simples e intuitiva.",
+  "fullDescription": "Aplicativo móvel criado para ajudar usuários a buscar, filtrar e explorar imóveis através de uma interface moderna e intuitiva, disponível para dispositivos iOS e Android. O sistema permite filtrar propriedades por tipo, incluindo kitnet, escritório comercial, casa e apartamento, tornando a busca mais precisa e eficiente. Os usuários também podem encontrar imóveis diretamente em um mapa interativo, navegando de forma livre e intuitiva para explorar diferentes regiões e imóveis disponíveis em tempo real. O aplicativo oferece uma experiência fluida e responsiva, projetada para facilitar a navegação e o acesso rápido às informações dos imóveis em dispositivos móveis.",
+  "role": "Desenvolvedor Frontend Líder",
+  "roleDescription": "Atuou como Desenvolvedor Frontend Líder, responsável por desenvolver funcionalidades do aplicativo móvel usando Ionic e Angular, focando na interface do usuário, navegação e integração com serviços do Firebase.",
+  "responsibilities": [
+    "Desenvolveu o frontend móvel usando Ionic e Angular",
+    "Implementou componentes de interface e fluxo de navegação",
+    "Integração do aplicativo com Firebase",
+    "Desenvolveu funcionalidades de busca e filtragem de imóveis",
+    "Implementou visualização de imóveis em mapa",
+    "Manutenção e correção de funcionalidades do frontend"
+  ]
+}
