@@ -45,7 +45,7 @@ const Projects = () => {
   const roleTypes = [
     { label: 'Frontend', match: 'Frontend' },
     { label: 'Backend', match: 'Backend' },
-    { label: 'Full Stack', match: 'Full-Stack' },
+    { label: 'Full Stack', match: 'Full Stack' },
   ];
 
   const toggleTag = (tag: string) => {
@@ -103,7 +103,7 @@ const Projects = () => {
 
             {/* Role + Tech filters */}
             <div className="flex flex-col items-center gap-3">
-              {/* <div className="flex items-center gap-2 flex-wrap justify-center">
+              <div className="flex items-center gap-2 flex-wrap justify-center">
                 <Filter size={14} className="text-muted-foreground" />
                 {roleTypes.map(r => (
                   <button
@@ -118,7 +118,7 @@ const Projects = () => {
                     {r.label}
                   </button>
                 ))}
-              </div> */}
+              </div>
 
               {/* <div className="flex items-center gap-2 flex-wrap justify-center">
                 {allTags.map(tag => (
