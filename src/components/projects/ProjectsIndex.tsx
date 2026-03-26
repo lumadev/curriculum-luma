@@ -4,7 +4,6 @@ import { projectsData } from "./data/index";
 import { Project } from "./data/projectTypes";
 import { Search, Filter } from 'lucide-react';
 import { Input } from '@/components/ui/input';
-// import { Button } from '@/components/ui/button';
 
 import ProjectCard from "./ProjectCard";
 import ProjectsHeader from "./ProjectsHeader";
@@ -39,26 +38,19 @@ const Projects = () => {
 
   const [searchQuery, setSearchQuery] = useState('');
   const [activeRole, setActiveRole] = useState<string | null>(null);
-  const [activeTags, setActiveTags] = useState<string[]>([]);
 
-  const allTags = useMemo(() => [...new Set(projectsData.flatMap(p => p.tags))], []);
   const roleTypes = [
     { label: 'Frontend', match: 'Frontend' },
     { label: 'Backend', match: 'Backend' },
     { label: 'Full Stack', match: 'Full Stack' },
   ];
 
-  const toggleTag = (tag: string) => {
-    setActiveTags(prev => prev.includes(tag) ? prev.filter(t => t !== tag) : [...prev, tag]);
-  };
-
   const clearFilters = () => {
     setSearchQuery('');
     setActiveRole(null);
-    setActiveTags([]);
   };
 
-  const hasActiveFilters = searchQuery || activeRole || activeTags.length > 0;
+  const hasActiveFilters = searchQuery || activeRole;
 
   const filteredProjects = useMemo(() => {
     const query = searchQuery.toLowerCase();
@@ -73,13 +65,9 @@ const Projects = () => {
       const matchesRole =
         !activeRole || role.includes(activeRole);
 
-      const matchesTags =
-        activeTags.length === 0 ||
-        activeTags.every(t => project.tags.includes(t));
-
-      return matchesSearch && matchesRole && matchesTags;
+      return matchesSearch && matchesRole;
     });
-  }, [normalizedProjects, searchQuery, activeRole, activeTags]);
+  }, [normalizedProjects, searchQuery, activeRole]);
 
   return (
     <>
@@ -101,7 +89,7 @@ const Projects = () => {
               />
             </div>
 
-            {/* Role + Tech filters */}
+            {/* Role filters */}
             <div className="flex flex-col items-center gap-3">
               <div className="flex items-center gap-2 flex-wrap justify-center">
                 <Filter size={14} className="text-muted-foreground" />
@@ -120,30 +108,14 @@ const Projects = () => {
                 ))}
               </div>
 
-              {/* <div className="flex items-center gap-2 flex-wrap justify-center">
-                {allTags.map(tag => (
-                  <button
-                    key={tag}
-                    onClick={() => toggleTag(tag)}
-                    className={`px-3 py-1.5 text-xs rounded-full border transition-all duration-200 ${
-                      activeTags.includes(tag)
-                        ? 'bg-primary text-primary-foreground border-primary'
-                        : 'bg-card text-muted-foreground border-border hover:border-primary/50'
-                    }`}
-                  >
-                    {tag}
-                  </button>
-                ))}
-              </div> */}
-
-              {/* {hasActiveFilters && (
+              {hasActiveFilters && (
                 <button
                   onClick={clearFilters}
                   className="text-xs text-muted-foreground hover:text-primary transition-colors underline underline-offset-2"
                 >
                   Clear filters
                 </button>
-              )} */}
+              )}
             </div>
           </div>
 
