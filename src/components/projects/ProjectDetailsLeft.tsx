@@ -62,7 +62,7 @@ const ProjectDetailsLeft = ({ selectedProject }: Props) => {
         <TabsContent value="experience" className="space-y-4 mt-4">
           <div>
             <div className="flex items-center gap-2 mb-2">
-              <span className="px-3 py-1 bg-primary/10 text-primary text-xs font-medium rounded-full">
+              <span className="py-1 bg-primary/10 text-primary text-xs font-medium rounded-full">
                 {t(selectedProject.role)} 
               </span>
             </div>
