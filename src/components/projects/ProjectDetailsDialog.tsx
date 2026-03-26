@@ -51,7 +51,7 @@ const ProjectDetailsDialog = ({
             {/* RIGHT */}
             <div className="flex-1 space-y-4">
               <h4 className="text-sm font-medium text-primary">
-                Gallery
+                {t("projectDetails.sections.gallery")}
               </h4>
 
               {/* MAIN IMAGE */}

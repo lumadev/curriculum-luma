@@ -29,7 +29,7 @@ const ProjectDetailsLeft = ({ selectedProject }: Props) => {
     <Tabs defaultValue="about" className="flex-1">
       <TabsList className="w-full bg-transparent border-b border-border rounded-none h-auto p-0 gap-4">
         <TabsTrigger value="about" className="rounded-none border-b-2 border-transparent data-[state=active]:border-primary data-[state=active]:bg-transparent data-[state=active]:shadow-none bg-transparent px-1 pb-2 gap-2">
-          About
+          {t("projectDetails.tabs.about")}
         </TabsTrigger>
 
         {roleDescription && (
@@ -41,7 +41,7 @@ const ProjectDetailsLeft = ({ selectedProject }: Props) => {
             data-[state=active]:shadow-none 
             bg-transparent px-1 pb-2 gap-2"
           >
-            My Role
+            {t("projectDetails.tabs.experience")}
           </TabsTrigger>
         )}
       </TabsList>
@@ -49,7 +49,7 @@ const ProjectDetailsLeft = ({ selectedProject }: Props) => {
       <TabsContent value="about" className="space-y-4 mt-4">
         <div>
           <h4 className="text-sm font-medium text-primary mb-2">
-            About the Project
+            {t("projectDetails.sections.aboutProject")}
           </h4>
           {fullDescription && (
             <p className="text-muted-foreground leading-relaxed">
@@ -59,7 +59,7 @@ const ProjectDetailsLeft = ({ selectedProject }: Props) => {
         </div>
         <div>
           <h4 className="text-sm font-medium text-primary mb-2">
-            Technologies Used
+            {t("projectDetails.sections.technologies")}
           </h4>
           <div className="flex flex-wrap gap-2">
             {selectedProject?.tags.map((tag) => (
@@ -94,7 +94,7 @@ const ProjectDetailsLeft = ({ selectedProject }: Props) => {
         {responsibilities?.length > 0 && (
           <div>
             <h4 className="text-sm font-medium text-primary mb-3">
-              Key Responsibilities
+              {t("projectDetails.sections.responsibilities")}
             </h4>
             <ul className="space-y-2">
               {responsibilities.map((item, i) => (

@@ -74,5 +74,17 @@
     "sectionSubtitle": "Portfólio",
     "sectionTitle": "Projetos",
     "sectionDescription": "Alguns dos projetos em que trabalhei"
+  },
+  "projectDetails": {
+    "tabs": {
+      "about": "Sobre",
+      "experience": "Minha Atuação"
+    },
+    "sections": {
+      "aboutProject": "Sobre o Projeto",
+      "technologies": "Tecnologias Utilizadas",
+      "responsibilities": "Principais Responsabilidades",
+      "gallery": "Galeria"
+    }
   }
 }

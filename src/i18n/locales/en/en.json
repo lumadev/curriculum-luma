@@ -74,5 +74,17 @@
     "sectionSubtitle": "Portfolio",
     "sectionTitle": "Projects",
     "sectionDescription": "Some of the projects I've worked on"
+  },
+  "projectDetails": {
+    "tabs": {
+      "about": "About",
+      "experience": "My Role"
+    },
+    "sections": {
+      "aboutProject": "About the Project",
+      "technologies": "Technologies Used",
+      "responsibilities": "Key Responsibilities",
+      "gallery": "Gallery"
+    }
   }
 }
