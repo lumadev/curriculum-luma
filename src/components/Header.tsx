@@ -63,13 +63,13 @@ const Header = () => {
           <div className="md:hidden mt-4 pb-4 animate-fade-in bg-background/95 backdrop-blur-lg relative z-50">
             <ul className="flex flex-col gap-4">
               {navItems.map((item) => (
-                <li key={item.label}>
+                <li key={item.labelKey}>
                   <a
                     href={item.href}
                     className="block py-2 text-muted-foreground hover:text-foreground transition-colors"
                     onClick={() => setIsMobileMenuOpen(false)}
                   >
-                    {item.label}
+                    {t(item.labelKey)}
                   </a>
                 </li>
               ))}
