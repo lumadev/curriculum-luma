@@ -1,29 +1,20 @@
 import { Project } from "../projectTypes";
 
 export const notifeyeProject: Project = {
-  title: "Notifeye Legal",
-  description:
-    "Centralized platform for managing legal service requests, tracking status, and connecting law firms with service providers.",
-  fullDescription:
-    "Notifeye Legal is a web platform designed to manage legal service requests in a centralized and efficient workflow. " +
-    "The system connects law firms, process servers, and service providers, allowing users to place orders, monitor progress, and track service status. " +
-    "The platform provides full visibility of each request from creation to completion, improving organization and communication between all parties involved. " +
-    "It replaces manual follow-ups with a structured interface where users can manage requests, view updates, and control the execution flow of legal services. " +
-    "The application focuses on usability, clear status tracking, and centralized management, " +
-    "making it easier to coordinate legal service operations across different users and providers.",
-
-  tags: ["Angular", "Typescript", "Node.js", "MongoDB", "Workflow", "International"],
+  id: "notifeye",
+  title: "notifeye.title",
+  description: "notifeye.description",
+  fullDescription: "notifeye.fullDescription",
+  tags: [
+    "Angular",
+    "Typescript",
+    "Node.js",
+    "MongoDB",
+    "Workflow",
+    "International",
+  ],
   image: "/notifeye/login.png",
-  galleryImages: [
-    "/notifeye/login.png"
-  ],
-  role: 'Full Stack Developer',
-  roleDescription:
-    "Worked as a Full Stack Developer, responsible for developing backend and frontend features, implementing workflow logic, and maintaining the system architecture.",
-  responsibilities: [
-    "Developed backend features using Node.js",
-    "Implemented frontend features using Angular",
-    "Designed and maintained MongoDB database structure",
-    "Collaborated with the team to deliver new features",
-  ],
+  galleryImages: ["/notifeye/login.png"],
+  role: "notifeye.role",
+  roleDescription: "notifeye.roleDescription",
 };

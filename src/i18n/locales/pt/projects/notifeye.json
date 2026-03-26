@@ -1,0 +1,13 @@
+{
+  "title": "Notifeye Legal",
+  "description": "Plataforma centralizada para gerenciamento de solicitações de serviços jurídicos, acompanhamento de status e conexão entre escritórios de advocacia e prestadores de serviço.",
+  "fullDescription": "Notifeye Legal é uma plataforma web desenvolvida para gerenciar solicitações de serviços jurídicos de forma centralizada e eficiente. O sistema conecta escritórios de advocacia, oficiais de justiça e prestadores de serviço, permitindo que usuários realizem pedidos, acompanhem o progresso e monitorem o status dos serviços. A plataforma oferece visibilidade completa de cada solicitação, desde a criação até a conclusão, melhorando a organização e a comunicação entre todas as partes envolvidas. Substitui acompanhamentos manuais por uma interface estruturada onde é possível gerenciar solicitações, visualizar atualizações e controlar o fluxo de execução dos serviços jurídicos. A aplicação foca em usabilidade, clareza no acompanhamento de status e gestão centralizada, facilitando a coordenação de operações jurídicas entre diferentes usuários e prestadores.",
+  "role": "Desenvolvedora Full Stack",
+  "roleDescription": "Atuou como Desenvolvedora Full Stack, responsável pelo desenvolvimento de funcionalidades backend e frontend, implementação da lógica de workflow e manutenção da arquitetura do sistema.",
+  "responsibilities": [
+    "Desenvolvimento de funcionalidades backend com Node.js",
+    "Implementação de funcionalidades frontend com Angular",
+    "Modelagem e manutenção do banco de dados MongoDB",
+    "Colaboração com o time na entrega de novas funcionalidades"
+  ]
+}
