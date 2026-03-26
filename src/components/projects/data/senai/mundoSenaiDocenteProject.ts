@@ -1,35 +1,12 @@
 import { Project } from "../projectTypes";
 
 export const mundoSenaiDocenteProject: Project = {
-  title: "Mundo SENAI Docente",
-  description:
-    "Collaborative platform created for SENAI teachers to share educational materials through a gamified social network.",
-  fullDescription:
-    "Web platform developed for SENAI to encourage collaboration between teachers through a social network focused on sharing educational resources. " +
-    "The system allowed instructors to publish learning materials, situations of learning, media files, and teaching experiences, making them available to other teachers across different departments. " +
-    "The platform was based on gamification concepts, where users earned points, rankings, and awards according to their participation, encouraging the continuous creation and improvement of educational content. " +
-    "Teachers could interact through profiles, comments, and shared resources, creating a collaborative environment designed to strengthen the national teaching methodology. " +
-    "Built as an internal institutional system, the application focused on knowledge sharing, engagement, and recognition of educators who contributed to the learning ecosystem.",
+  id: "mundoSenaiDocente",
   tags: ["PHP", "PostgreSQL", "Gamification", "Education"],
   image: "/senai/msd-profile.png",
   galleryImages: [
     "/senai/msd-initial-page.png",
     "/senai/msd-profile.png"
-  ],
-  role: "Lead Backend Engineer",
-  roleDescription:
-    "Worked as the lead Backend Developer, responsible for backend architecture, feature development, and database design, and also worked as QA for several months, performing testing, validation, and bug tracking.",
-  responsibilities: [
-    "Led backend development using PHP",
-    "Designed and maintained PostgreSQL database structure",
-    "Implemented gamification and business logic",
-    "Developed backend services and APIs",
-    "Maintained existing features and fixed bugs",
-    "Performed manual testing and quality assurance",
-    "Reported, tracked, and validated bugs",
-    "Participated in technical interviews and hiring process",
-    "Conducted training sessions with instructors",
-    "Collaborated with frontend and product team",
   ],
   isFavorite: true
 };

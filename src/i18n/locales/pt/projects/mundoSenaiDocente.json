@@ -1,0 +1,19 @@
+{
+  "title": "Mundo SENAI Docente",
+  "description": "Plataforma colaborativa criada para professores do SENAI compartilharem materiais educacionais por meio de uma rede social gamificada.",
+  "fullDescription": "Plataforma web desenvolvida para o SENAI com o objetivo de incentivar a colaboração entre professores por meio de uma rede social voltada para o compartilhamento de recursos educacionais. O sistema permitia que os instrutores publicassem materiais de aprendizagem, situações de aprendizagem, arquivos multimídia e experiências de ensino, tornando-os disponíveis para outros professores de diferentes departamentos. A plataforma foi baseada em conceitos de gamificação, onde os usuários ganhavam pontos, rankings e premiações de acordo com sua participação, incentivando a criação contínua e o aprimoramento de conteúdos educacionais. Os professores podiam interagir por meio de perfis, comentários e recursos compartilhados, criando um ambiente colaborativo projetado para fortalecer a metodologia de ensino nacional. Desenvolvido como um sistema institucional interno, o aplicativo focava no compartilhamento de conhecimento, engajamento e reconhecimento dos educadores que contribuíam para o ecossistema de aprendizagem.",
+  "role": "Engenheiro Backend Líder",
+  "roleDescription": "Atuou como Desenvolvedor Backend Líder, responsável pela arquitetura do backend, desenvolvimento de funcionalidades e design do banco de dados, e também atuou como QA por vários meses, realizando testes, validações e acompanhamento de bugs.",
+  "responsibilities": [
+    "Liderou o desenvolvimento backend usando PHP",
+    "Desenhou e manteve a estrutura do banco de dados PostgreSQL",
+    "Implementou lógica de gamificação e regras de negócio",
+    "Desenvolveu serviços e APIs de backend",
+    "Manteve funcionalidades existentes e corrigiu bugs",
+    "Realizou testes manuais e controle de qualidade",
+    "Reportou, acompanhou e validou bugs",
+    "Participou de entrevistas técnicas e processo de contratação",
+    "Conduziu treinamentos com instrutores",
+    "Colaborou com as equipes de frontend e produto"
+  ]
+}
