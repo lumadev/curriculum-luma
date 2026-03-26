@@ -11,7 +11,13 @@ interface Props {
 const ProjectCard = ({ project, onClick }: Props) => {
   const [isVertical, setIsVertical] = useState(false);
 
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+
+  const titleKey = `${project.id}.title`;
+  const descriptionKey = `${project.id}.description`;
+
+  const title = i18n.exists(titleKey) ? t(titleKey) : null;
+  const description = i18n.exists(descriptionKey) ? t(descriptionKey) : null;
 
   const handleLoad = (e: React.SyntheticEvent<HTMLImageElement>) => {
     const img = e.currentTarget;
@@ -38,7 +44,7 @@ const ProjectCard = ({ project, onClick }: Props) => {
       >
         <img
           src={project.image}
-          alt={project.title}
+          alt={project.id}
           onLoad={handleLoad}
           className={`
             w-full
@@ -61,14 +67,18 @@ const ProjectCard = ({ project, onClick }: Props) => {
       </div>
 
       <div className="p-6">
-        <h3 className="font-display font-semibold text-xl text-foreground mb-2 flex items-center gap-2">
-          {t(project.title)}
-          {project.isFavorite && <Star size={16} className="text-primary fill-primary shrink-0" />}
-        </h3>
+        {title && (
+          <h3 className="font-display font-semibold text-xl text-foreground mb-2 flex items-center gap-2">
+            {title}
+            {project.isFavorite && <Star size={16} className="text-primary fill-primary shrink-0" />}
+          </h3>
+        )}
 
-        <p className="text-muted-foreground text-base md:text-lg mb-4">
-          {t(project.description)}
-        </p>
+        {description && (
+          <p className="text-muted-foreground text-base md:text-lg mb-4">
+            {description}
+          </p>
+        )}
 
         <div className="flex flex-wrap gap-2">
           {project.tags.map(tag => (

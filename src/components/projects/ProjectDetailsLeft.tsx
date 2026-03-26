@@ -7,11 +7,21 @@ interface Props {
 }
 
 const ProjectDetailsLeft = ({ selectedProject }: Props) => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+  const selectedProjectId = selectedProject.id;
 
-  const raw = t(`${selectedProject.id}.responsibilities`, {
+  const raw = t(`${selectedProjectId}.responsibilities`, {
     returnObjects: true,
   });
+
+  
+  const fullDescriptionKey = `${selectedProjectId}.fullDescription`;
+  const roleKey = `${selectedProjectId}.role`;
+  const roleDescriptionKey = `${selectedProjectId}.roleDescription`;
+
+  const fullDescription = i18n.exists(fullDescriptionKey) ? t(fullDescriptionKey) : null;
+  const role = i18n.exists(roleKey) ? t(roleKey) : null;
+  const roleDescription = i18n.exists(roleDescriptionKey) ? t(roleDescriptionKey) : null;
 
   const responsibilities = Array.isArray(raw) ? raw : [];
 
@@ -22,7 +32,7 @@ const ProjectDetailsLeft = ({ selectedProject }: Props) => {
           About
         </TabsTrigger>
 
-        {selectedProject?.roleDescription && (
+        {roleDescription && (
           <TabsTrigger
             value="experience"
             className="rounded-none border-b-2 border-transparent 
@@ -38,13 +48,19 @@ const ProjectDetailsLeft = ({ selectedProject }: Props) => {
 
       <TabsContent value="about" className="space-y-4 mt-4">
         <div>
-          <h4 className="text-sm font-medium text-primary mb-2">About the Project</h4>
-          <p className="text-muted-foreground leading-relaxed">
-            {t(selectedProject.fullDescription)} 
-          </p>
+          <h4 className="text-sm font-medium text-primary mb-2">
+            About the Project
+          </h4>
+          {fullDescription && (
+            <p className="text-muted-foreground leading-relaxed">
+              {fullDescription}
+            </p>
+          )}
         </div>
         <div>
-          <h4 className="text-sm font-medium text-primary mb-2">Technologies Used</h4>
+          <h4 className="text-sm font-medium text-primary mb-2">
+            Technologies Used
+          </h4>
           <div className="flex flex-wrap gap-2">
             {selectedProject?.tags.map((tag) => (
               <span
@@ -57,36 +73,40 @@ const ProjectDetailsLeft = ({ selectedProject }: Props) => {
           </div>
         </div>
       </TabsContent>
-      
-      {selectedProject?.roleDescription && (
-        <TabsContent value="experience" className="space-y-4 mt-4">
-          <div>
+    
+      <TabsContent value="experience" className="space-y-4 mt-4">
+        <div>
+          {role && (
             <div className="flex items-center gap-2 mb-2">
-              <span className="py-1 bg-primary/10 text-primary text-xs font-medium rounded-full">
-                {t(selectedProject.role)} 
-              </span>
-            </div>
-            <p className="text-muted-foreground leading-relaxed">
-              {t(selectedProject.roleDescription)} 
-            </p>
-          </div>
-          {responsibilities?.length > 0 && (
-            <div>
-              <h4 className="text-sm font-medium text-primary mb-3">
-                Key Responsibilities
-              </h4>
-              <ul className="space-y-2">
-                {responsibilities.map((item, i) => (
-                  <li key={i} className="flex items-start gap-2 text-sm text-muted-foreground">
-                    <span className="mt-1.5 h-1.5 w-1.5 rounded-full bg-primary shrink-0" />
-                    {item}
-                  </li>
-                ))}
-              </ul>
+              {role && (
+                <span className="py-1 bg-primary/10 text-primary text-xs font-medium rounded-full">
+                  {role}
+                </span>
+              )}
             </div>
           )}
-        </TabsContent>
-      )}
+          {roleDescription && (
+            <p className="text-muted-foreground leading-relaxed">
+              {roleDescription}
+            </p>
+          )}
+        </div>
+        {responsibilities?.length > 0 && (
+          <div>
+            <h4 className="text-sm font-medium text-primary mb-3">
+              Key Responsibilities
+            </h4>
+            <ul className="space-y-2">
+              {responsibilities.map((item, i) => (
+                <li key={i} className="flex items-start gap-2 text-sm text-muted-foreground">
+                  <span className="mt-1.5 h-1.5 w-1.5 rounded-full bg-primary shrink-0" />
+                  {item}
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
+      </TabsContent>
     </Tabs>
   );
 };
