@@ -60,6 +60,7 @@ const Projects = () => {
         !searchQuery ||
         title.toLowerCase().includes(query) ||
         description.toLowerCase().includes(query) ||
+        role.toLowerCase().includes(query) ||
         project.tags.some(t => t.toLowerCase().includes(query));
 
       const matchesRole =
@@ -82,7 +83,7 @@ const Projects = () => {
             <div className="relative max-w-md mx-auto">
               <Search size={16} className="absolute left-3 top-1/2 -translate-y-1/2 text-muted-foreground" />
               <Input
-                placeholder="Search projects..."
+                placeholder={t("projects.searchPlaceholder")}
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
                 className="pl-9 bg-card border-border"
@@ -123,7 +124,7 @@ const Projects = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {filteredProjects.length === 0 ? (
               <div className="col-span-full text-center py-12 text-muted-foreground">
-                No projects found matching your filters.
+                {t("projects.noProjectsSearch")}
               </div>
             ) : null}
             {filteredProjects.map((projectFormatted, index) => (

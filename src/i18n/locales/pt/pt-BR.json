@@ -71,6 +71,8 @@
     }
   },
   "projects": {
+    "searchPlaceholder": "Buscar Projetos...",
+    "noProjectsSearch": "Nenhum projeto encontrado com esses filtros.",
     "sectionSubtitle": "Portfólio",
     "sectionTitle": "Projetos",
     "sectionDescription": "Alguns dos projetos em que trabalhei"
