@@ -1,6 +1,7 @@
 import {
   Dialog,
   DialogContent,
+  DialogDescription,
   DialogHeader,
   DialogTitle,
 } from "@/components/ui/dialog";
@@ -24,15 +25,25 @@ const ProjectDetailsDialog = ({
   onClose,
   onOpenImage,
 }: Props) => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+
+  const titleKey = `${project?.id}.title`;
+  const descriptionKey = `${project?.id}.description`;
+
+  const title = i18n.exists(titleKey) ? t(titleKey) : null;
+  const description = i18n.exists(descriptionKey) ? t(descriptionKey) : null;
 
   return (
     <Dialog open={!!project} onOpenChange={onClose}>
       <DialogContent className="max-w-5xl max-h-[90vh] overflow-y-auto">
         <DialogHeader>
           <DialogTitle className="text-2xl font-display">
-            {t(project?.title)}
+            {title}
           </DialogTitle>
+
+          <DialogDescription className="sr-only">
+            {description}
+          </DialogDescription>
         </DialogHeader>
 
         {project && (
