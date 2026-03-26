@@ -1,10 +1,17 @@
 import { Project } from "../projectTypes";
 
+/**
+ * Projeto Notifeye
+ *
+ * As seguintes propriedades **vêm do i18n**:
+ * - title
+ * - description
+ * - fullDescription
+ * - role
+ * - roleDescription
+ */
 export const notifeyeProject: Project = {
   id: "notifeye",
-  title: "notifeye.title",
-  description: "notifeye.description",
-  fullDescription: "notifeye.fullDescription",
   tags: [
     "Angular",
     "Typescript",
@@ -15,6 +22,4 @@ export const notifeyeProject: Project = {
   ],
   image: "/notifeye/login.png",
   galleryImages: ["/notifeye/login.png"],
-  role: "notifeye.role",
-  roleDescription: "notifeye.roleDescription",
 };
