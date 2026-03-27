@@ -19,6 +19,19 @@ const ProjectCard = ({ project, onClick }: Props) => {
   const title = i18n.exists(titleKey) ? t(titleKey) : null;
   const description = i18n.exists(descriptionKey) ? t(descriptionKey) : null;
 
+  const tagTranslations = {
+    "pt-BR": {
+      "Payments": "Pagamentos",
+      "Education": "Educação",
+      "International": "Internacional",
+      "Identity Provider": "Provedor de Identidade",
+      "Admin Portal": "Portal Admin",
+      "Authentication": "Autenticação",
+      "Catalog": "Catálogo"
+    },
+    "en": {}
+  };
+
   const handleLoad = (e: React.SyntheticEvent<HTMLImageElement>) => {
     const img = e.currentTarget;
     if (img.naturalHeight > img.naturalWidth) {
@@ -86,7 +99,7 @@ const ProjectCard = ({ project, onClick }: Props) => {
               key={tag}
               className="px-3 py-1 bg-primary/10 text-primary text-sm md:text-base rounded-full"
             >
-              {tag}
+              {tagTranslations[i18n.language]?.[tag] || tag}
             </span>
           ))}
         </div>
