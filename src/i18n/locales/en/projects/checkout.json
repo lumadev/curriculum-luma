@@ -1,0 +1,15 @@
+{
+  "title": "Checkout Payment Link",
+  "description": "Web application for generating and processing payment links with support for PIX, credit card, and slip transactions.",
+  "fullDescription": "Web application developed to enable payment processing through shareable payment links, supporting PIX, credit card, and slip transactions. The system provides a streamlined and user-friendly checkout experience, allowing end users to complete payments quickly and securely.\n\nBuilt with a modern frontend architecture using Vue 3, TypeScript, and Vite, the application includes features such as dynamic theming per client, internationalization, QR code generation for PIX payments, and barcode generation for slip transactions. It is integrated with backend payment services through APIs, ensuring secure transaction handling and real-time payment status updates.\n\nThe project supports multiple environments (development, release, staging, and production) with structured build pipelines, and follows best practices for code quality, testing, and maintainability. A significant part of the work involved refactoring legacy flows into a more modern, intuitive, and fully responsive user interface optimized for mobile devices, leveraging AI-assisted development tools to improve productivity and code quality.",
+  "role": "Frontend Engineer, Tech Lead",
+  "roleDescription": "Worked as a Frontend Engineer and Tech Lead, responsible for leading frontend improvements, coordinating the development workflow, and ensuring code quality and delivery standards.",
+  "responsibilities": [
+    "Coordinated frontend team tasks and deliveries",
+    "Refactored payment flows into a more modern, intuitive, and mobile-responsive user interface",
+    "Leveraged AI-assisted development tools (e.g., Cursor) to improve productivity and code quality",
+    "Developed reusable and scalable UI components",
+    "Ensured code quality through reviews and best practices",
+    "Implemented CI/CD pipeline for frontend deployment"
+  ]
+}
