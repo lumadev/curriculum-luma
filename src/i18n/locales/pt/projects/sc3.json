@@ -1,0 +1,20 @@
+{
+  "title": "Portal do Parceiro",
+  "description": "Aplicação web para parceiros gerenciarem configurações de pagamentos, lojistas, terminais e operações financeiras em uma plataforma centralizada.",
+  "fullDescription": "Aplicação web desenvolvida para fornecer aos parceiros uma plataforma completa para gerenciamento de configurações do ecossistema de pagamentos e operações financeiras. Diferente do Portal do Lojista, que é focado na experiência do lojista, este sistema é voltado para que parceiros tenham controle total sobre a camada operacional. Inclui gestão de lojistas, terminais, configurações de liquidação, estruturas de taxas e definições do gateway de pagamentos.\n\nA plataforma oferece relatórios financeiros detalhados, incluindo pagamentos por cartão, boleto e PIX, além de acompanhamento de recebíveis, com capacidade de exportação em CSV para todos os relatórios. Integrada ao ecossistema GSurf, a aplicação se comunica com microsserviços de autenticação, transações e liquidação, centralizando fluxos complexos que anteriormente eram fragmentados.\n\nDevido ao seu alto nível de complexidade, o sistema possui mais de 600 componentes, suportando configurações avançadas, controle de acesso baseado em papéis (RBAC) e uma arquitetura escalável, sendo adequado para operações de pagamento em larga escala e gestão de parceiros.",
+  "role": "Engenheiro Frontend, Tech Lead",
+  "roleDescription": "Atuei como Engenheiro Frontend Sênior, exercendo o papel de Tech Lead e Frontend Manager, sendo responsável por liderar a arquitetura frontend e desenvolver features de modo geral.",
+  "responsibilities": [
+    "Implementei funcionalidades frontend complexas voltadas à gestão em nível de parceiro",
+    "Liderei a arquitetura frontend de um sistema de grande escala e altamente modular",
+    "Mentorei desenvolvedores júnior e pleno",
+    "Atuei como Tech Lead no desenvolvimento frontend",
+    "Coordenei tarefas e entregas do time frontend",
+    "Revisei pull requests e garanti padrões de qualidade de código",
+    "Colaborei com times de backend, QA e produto",
+    "Gerenciei prioridades do projeto e decisões técnicas",
+    "Desenvolvi componentes de UI escaláveis e reutilizáveis",
+    "Gerenciei estados complexos distribuídos em centenas de componentes",
+    "Implementei e mantive pipeline de CI/CD para deploy do frontend"
+  ]
+}

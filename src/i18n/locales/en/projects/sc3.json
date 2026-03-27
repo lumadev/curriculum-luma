@@ -1,0 +1,20 @@
+{
+  "title": "Partner Portal",
+  "description": "Web application for partners to manage payment configurations, merchants, terminals, and financial operations in a centralized platform.",
+  "fullDescription": "Web application developed to provide partners with a complete platform for managing payment ecosystem configurations and financial operations. Unlike the Merchant Portal, which focuses on the merchant experience, this system is designed for partners to control and configure the entire operation layer. It includes management of merchants, terminals, settlement configurations, fee structures, and gateway settings. \n\nThe platform offers detailed financial reports, including payments by card, boleto, and PIX, as well as receivables tracking, with export capabilities through CSV generation. Integrated into the GSurf ecosystem, it communicates with authentication, transaction, and settlement microservices, centralizing complex workflows that were previously fragmented.\n\nDue to its high level of complexity, the system includes more than 600 components, supporting advanced configurations, role-based access control and scalable architecture, making it suitable for large-scale payment operations and partner management.",
+  "role": "Frontend Engineer, Tech Lead",
+  "roleDescription": "Worked as a Senior Frontend Engineer, acting as Tech Lead and Frontend Manager, responsible for leading the frontend architecture, mentoring developers, and coordinating the development team.",
+  "responsibilities": [
+    "Implemented complex frontend features for partner-level management",
+    "Led frontend architecture for a large-scale and highly modular system",
+    "Mentored junior and mid-level developers",
+    "Acted as Tech Lead for frontend development",
+    "Coordinated frontend team tasks and deliveries",
+    "Reviewed pull requests and enforced code standards",
+    "Collaborated with backend, QA and product teams",
+    "Managed project priorities and technical decisions",
+    "Developed scalable and reusable UI components",
+    "Handled complex state management across hundreds of components",
+    "Implemented and maintained CI/CD pipeline for frontend deployment"
+  ]
+}

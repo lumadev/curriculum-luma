@@ -3,6 +3,7 @@ import { Project } from "./projectTypes";
 import { musicProject } from "./personal/musicProject";
 import { merchantProject } from "./gsurf/merchantProject";
 import { mundoSenaiDocenteProject } from "./senai/mundoSenaiDocenteProject";
+import { sc3Project } from "./gsurf/sc3Project";
 import { notifeyeProject } from "./icarus/notifeyeProject";
 import { senaiItinerariosProject } from "./senai/senaiItinerariosProject";
 import { gmacProject } from "./gsurf/gmacProject";
@@ -14,6 +15,7 @@ export const projectsData: Project[] = [
   musicProject,
   merchantProject,
   mundoSenaiDocenteProject,
+  sc3Project,
   notifeyeProject,
   senaiItinerariosProject,
   gmacProject,
