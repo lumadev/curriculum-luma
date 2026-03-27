@@ -73,6 +73,7 @@
   "projects": {
     "searchPlaceholder": "Search projects...",
     "noProjectsSearch": "No projects found matching your filters.",
+    "clearFilters": "Clear filters",
     "sectionSubtitle": "Portfolio",
     "sectionTitle": "Projects",
     "sectionDescription": "Some of the projects I've worked on"

@@ -114,7 +114,7 @@ const Projects = () => {
                   onClick={clearFilters}
                   className="text-xs text-muted-foreground hover:text-primary transition-colors underline underline-offset-2"
                 >
-                  Clear filters
+                  {t('projects.clearFilters')}
                 </button>
               )}
             </div>
