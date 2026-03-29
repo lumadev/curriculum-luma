@@ -1,7 +1,7 @@
 {
   "title": "Agendador de Reposições de Aula",
   "description": "Aplicação criada para simplificar o gerenciamento de reposições de aula para professores de música.",
-  "fullDescription": "Aplicação desenvolvida para ajudar professores de música a gerenciar alunos, reposições de aula e organização das músicas em uma interface centralizada e intuitiva. O sistema melhora o controle de agenda, acompanha o progresso dos alunos através das músicas atribuídas e mantém as datas de evento organizadas em um único lugar. É totalmente responsivo, proporcionando uma experiência fluida em desktop, tablet e dispositivos móveis.",
+  "fullDescription": "Aplicação desenvolvida para ajudar professores de música a gerenciar alunos, reposições de aula e organização das músicas em uma interface centralizada e intuitiva. O sistema melhora o controle de agenda, acompanha o progresso dos alunos através das músicas atribuídas e mantém as datas de evento organizadas em um único lugar. É totalmente responsivo, proporcionando uma experiência fluida em desktop, tablet e dispositivos mobile.",
   "role": "Desenvolvedora Full Stack",
   "roleDescription": "Atuou como Desenvolvedor Full Stack, responsável por toda a arquitetura do sistema, incluindo desenvolvimento backend com Node.js, modelagem de banco de dados e implementação do frontend com React.",
   "responsibilities": [
