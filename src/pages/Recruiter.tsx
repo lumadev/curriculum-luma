@@ -102,7 +102,7 @@ const categories = [
     questions: [
       {
         q: 'What are you looking for in your next role?',
-        a: "I'm looking for a role where I can work on challenging technical problems, contribute to meaningful products, and grow as an engineer. I value companies with strong engineering culture, opportunities for mentorship, and a clear product vision.",
+        a: "I'm looking for a role where I can work on challenging technical problems, contribute to meaningful products, and grow as an engineer. I value companies with strong engineering culture, and a clear product vision.",
       },
       {
         q: 'What are your salary expectations?',
