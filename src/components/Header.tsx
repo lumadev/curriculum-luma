@@ -6,7 +6,7 @@ const navItems = [
   { labelKey: 'header.about', href: '#about' },
   { labelKey: 'header.skills', href: '#skills' },
   { labelKey: 'header.projects', href: '#projects' },
-  { labelKey: 'Recruiter', href: '/recruiter' },
+  // { labelKey: 'Recruiter', href: '/recruiter' },
 ];
 
 const Header = () => {
