@@ -1,0 +1,16 @@
+{
+  "title": "Ecommerce 3D",
+  "description": "Plataforma de e-commerce para venda de produtos personalizados em 3D e itens à pronta-entrega.",
+  "fullDescription": "Ecommerce 3D é uma plataforma de comércio eletrônico desenvolvida para oferecer produtos personalizados e itens à pronta-entrega. O sistema permite que usuários solicitem customização de produtos em 3D, além de navegar por um catálogo tradicional de produtos disponíveis para envio imediato. A aplicação foi construída com foco em experiência do usuário, performance e escalabilidade, integrando um backend robusto em NestJS com Node.js, um frontend dinâmico em React e um banco de dados PostgreSQL para gerenciamento eficiente das informações. A plataforma inclui funcionalidades como autenticação de usuários, carrinho de compras, gerenciamento de pedidos e painel administrativo para controle de estoque e vendas.",
+  "role": "Full Stack Developer",
+  "roleDescription": "Atuação como Desenvolvedor Full Stack, responsável pelo desenvolvimento completo da aplicação, incluindo frontend, backend e integração com banco de dados.",
+  "responsibilities": [
+    "Desenvolvimento de APIs REST utilizando NestJS e Node.js",
+    "Construção da interface do usuário com React",
+    "Modelagem e gerenciamento de dados com PostgreSQL",
+    "Desenvolvimento de sistema de autenticação e autorização",
+    "Implementação de carrinho de compras e fluxo de checkout",
+    "Criação de painel administrativo para gestão de produtos e pedidos",
+    "Desenvolvimento de tela e fluxo de acompanhamento de pedidos para usuários e administradores"
+  ]
+}
