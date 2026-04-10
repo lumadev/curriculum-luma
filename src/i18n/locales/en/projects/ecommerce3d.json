@@ -1,13 +1,13 @@
 {
   "title": "Ecommerce 3D",
   "description": "E-commerce platform for selling custom 3D products and ready-to-ship items.",
-  "fullDescription": "Ecommerce 3D is an e-commerce platform designed to offer both customizable 3D products and ready-to-ship items. The system allows users to personalize products in 3D, previewing changes in real time before completing a purchase, as well as browse a traditional catalog of products available for immediate delivery. The application was built with a focus on user experience, performance, and scalability, integrating a robust backend using NestJS with Node.js, a dynamic frontend built with React, and a MongoDB database for efficient data management. The platform includes features such as user authentication, shopping cart, order management, product customization, and an administrative panel for inventory and sales control.",
+  "fullDescription": "Ecommerce 3D is an e-commerce platform designed to offer both customizable 3D products and ready-to-ship items. The system allows users to request personalized products in 3D, as well as browse a traditional catalog of products available for immediate delivery. The application was built with a focus on user experience, performance, and scalability, integrating a robust backend using NestJS with Node.js, a dynamic frontend built with React, and a PostgreSQL database for efficient data management. The platform includes features such as user authentication, shopping cart, order management and an administrative panel for inventory and sales control.",
   "role": "Full Stack Developer",
   "roleDescription": "Worked as a Full Stack Developer, responsible for end-to-end application development, including frontend, backend, and database integration.",
   "responsibilities": [
     "Developed RESTful APIs using NestJS and Node.js",
     "Built user interfaces using React",
-    "Designed and managed data models with MongoDB",
+    "Designed and managed data models with PostgreSQL",
     "Implemented authentication and authorization systems",
     "Developed shopping cart and checkout flow",
     "Created an administrative panel for product and order management",
