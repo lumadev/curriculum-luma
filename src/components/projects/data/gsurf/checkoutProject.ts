@@ -5,5 +5,5 @@ export const checkoutProject: Project = {
   tags: ["Vue.js", "Vuetify", "Fintech", "Mobile-First", "TypeScript", "AI-Assisted Development", "Cursor"],
   image: "/gsurf/checkout-initial-page-large.png",
   galleryImages: ["/gsurf/checkout-payment-link.png"],
-  isFavorite: false,
+  isFavorite: true,
 };

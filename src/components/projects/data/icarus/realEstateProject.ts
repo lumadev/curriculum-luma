@@ -12,4 +12,5 @@ export const realEstateProject: Project = {
     "/beehav/register.png",
     "/beehav/search.png"
   ],
+  isFavorite: false,
 };

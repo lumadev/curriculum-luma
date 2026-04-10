@@ -5,5 +5,5 @@ export const merchantProject: Project = {
   tags: ["Vue.js", "Vuetify", "Fintech"],
   image: "/gsurf/login-merchant.png",
   galleryImages: ["/gsurf/logo.png"],
-  isFavorite: true,
+  isFavorite: false,
 };

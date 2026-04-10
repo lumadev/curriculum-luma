@@ -22,4 +22,5 @@ export const notifeyeProject: Project = {
   ],
   image: "/notifeye/login.png",
   galleryImages: ["/notifeye/login.png"],
+  isFavorite: false,
 };
