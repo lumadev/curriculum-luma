@@ -11,10 +11,13 @@ import { adminProject } from "./gsurf/adminProject";
 import { realEstateProject } from "./icarus/realEstateProject";
 import { cinepediaProject } from "./personal/cinepediaProject";
 import { checkoutProject } from "./gsurf/checkoutProject";
+import { ecommerce3dProject } from "./personal/ecommerce-3d";
 
 export const projectsData: Project[] = [
   musicProject,
+  ecommerce3dProject,
   merchantProject,
+  checkoutProject,
   mundoSenaiDocenteProject,
   sc3Project,
   notifeyeProject,
@@ -23,5 +26,4 @@ export const projectsData: Project[] = [
   adminProject,
   realEstateProject,
   cinepediaProject,
-  checkoutProject
 ];
