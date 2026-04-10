@@ -10,10 +10,10 @@
     "sectionTitleStart": "About",
     "sectionTitleHighlight": "Me",
     "description": {
-      "introStrong": "Senior Full-Stack Engineer focused on scalable web applications",
+      "introStrong": "Senior Full Stack Engineer focused on scalable web applications",
       "introText": "with strong expertise in architecture, performance, scalability, and clean code practices. I have over 14 years of experience designing and building robust, scalable, and maintainable systems using modern web technologies.",
       "experienceStart": "I have extensive experience in",
-      "experienceStrong": "full-stack development",
+      "experienceStrong": "full stack development",
       "experienceMiddle": "working with technologies such as",
       "experienceTech": "Vue.js, TypeScript, Node.js, PHP, React, Next.js",
       "experienceEnd": "and modern architectures. I care deeply about code quality, performance, and long-term maintainability, and I enjoy solving complex technical problems with simple and well-structured solutions.",
@@ -62,7 +62,7 @@
       "buildHighlight": "something",
       "buildSuffix": "together"
     },
-    "description": "Passionate developer focused on building elegant and scalable solutions. With experience in systems architecture and full-stack development, I turn complex ideas into reliable, high-quality digital products.",
+    "description": "Passionate developer focused on building elegant and scalable solutions. With experience in systems architecture and full stack development, I turn complex ideas into reliable, high-quality digital products.",
     "actions": {
       "checkProjects": "View Projects"
     },

@@ -10,10 +10,10 @@
     "sectionTitleStart": "Sobre",
     "sectionTitleHighlight": "",
     "description": {
-      "introStrong": "Engenheiro Full-Stack Sênior focado em aplicações web escaláveis,",
+      "introStrong": "Engenheiro Full Stack Sênior focado em aplicações web escaláveis,",
       "introText": "com forte experiência em arquitetura, performance, escalabilidade e boas práticas de código limpo. Tenho mais de 14 anos de experiência projetando e desenvolvendo sistemas robustos, escaláveis e de fácil manutenção, utilizando tecnologias web modernas.",
       "experienceStart": "Tenho ampla experiência em",
-      "experienceStrong": "desenvolvimento full-stack",
+      "experienceStrong": "desenvolvimento full stack",
       "experienceMiddle": "trabalhando com tecnologias como",
       "experienceTech": "Vue.js, TypeScript, Node.js, PHP, React, Next.js",
       "experienceEnd": "e arquiteturas modernas. Me preocupo com a qualidade do código, performance e manutenção a longo prazo, e gosto de resolver problemas técnicos complexos com soluções simples e bem estruturadas.",
@@ -62,7 +62,7 @@
       "buildHighlight": "algo",
       "buildSuffix": "juntos"
     },
-    "description": "Desenvolvedor apaixonado por criar soluções elegantes e escaláveis. Com experiência em arquitetura de sistemas e desenvolvimento full-stack, transformo ideias complexas em produtos digitais confiáveis e de alta qualidade.",
+    "description": "Desenvolvedor apaixonado por criar soluções elegantes e escaláveis. Com experiência em arquitetura de sistemas e desenvolvimento full stack, transformo ideias complexas em produtos digitais confiáveis e de alta qualidade.",
     "actions": {
       "checkProjects": "Ver projetos"
     },
