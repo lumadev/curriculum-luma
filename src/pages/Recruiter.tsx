@@ -33,6 +33,10 @@ const categories = [
         a: "I work with Vue.js and React on the frontend, Node.js and PHP on the backend, and MySQL/PostgreSQL for databases. I use TypeScript across the stack for type safety. I'm experienced with Git workflows, CI/CD pipelines, and modern development practices.",
       },
       {
+        q: 'Describe a React project you worked on',
+        a: "One project I worked on was an e-commerce platform that supported both ready-to-ship and customizable 3D products. I was responsible for the frontend architecture using React, where I designed reusable components and structured the application to support scalability as new product types were added. One key decision was separating UI components from business logic using hooks and service layers, which made the codebase easier to maintain and test. I also integrated Cloudinary for image handling and optimized loading strategies to improve performance. As a result, we improved page load times and made it easier to introduce new features without affecting existing functionality.",
+      },
+      {
         q: 'How do you ensure code quality?',
         a: 'I follow test-driven development with unit and functional tests, apply SOLID principles and DDD patterns, conduct thorough code reviews, and maintain consistent coding standards. I also prioritize web security best practices in every project.',
       },
