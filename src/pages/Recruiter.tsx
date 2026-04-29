@@ -11,7 +11,7 @@ const categories = [
     questions: [
       {
         q: 'Tell me about yourself.',
-        a: "I'm a Software Engineer with experience building scalable web applications. I specialize in both frontend and backend development, working with technologies like React, Vue.js, Node.js, PHP, and relational databases. I'm passionate about clean architecture, applying Domain-Driven Design principles, and delivering high-quality software that solves real business problems.",
+        a: "I'm a Senior Full Stack Engineer focused on scalable web applicationswith strong expertise in architecture, performance, scalability, and clean code practices. I have over 14 years of experience designing and building robust, scalable, and maintainable systems using modern web technologies. I have extensive experience in full stack development, working with technologies such asVue.js, TypeScript, Node.js, PHP, React, Next.js and modern architectures. I care deeply about code quality, performance, and long-term maintainability, and I enjoy solving complex technical problems with simple and well-structured solutions. Beyond code, I value clear communication, ownership, and collaboration. I have experience working closely with engineering, product, and design teams to deliver high-quality software aligned with business goals and user needs.",
       },
       {
         q: 'Why did you choose software engineering?',
@@ -35,6 +35,10 @@ const categories = [
       {
         q: 'Describe a React project you worked on',
         a: "One project I worked on was an e-commerce platform that supported both ready-to-ship and customizable 3D products. I was responsible for the frontend architecture using React, where I designed reusable components and structured the application to support scalability as new product types were added. One key decision was separating UI components from business logic using hooks and service layers, which made the codebase easier to maintain and test. I also integrated Cloudinary for image handling and optimized loading strategies to improve performance. As a result, we improved page load times and made it easier to introduce new features without affecting existing functionality.",
+      },
+      {
+        a: 'Loading Performance in React',
+        q: 'When I talk about loading performance in React, I usually think about how quickly the user can see and interact with meaningful content, not just how fast the app technically loads. I approach this in a few key ways. First, I use code splitting and lazy loading to reduce the initial bundle size. With tools like React.lazy and dynamic imports, I make sure only the necessary code is loaded upfront, and the rest is loaded on demand. I also focus on optimizing asset delivery, especially images. For example, I use services like Cloudinary to serve properly sized and compressed images, which significantly reduces load time. Another important aspect is handling loading states effectively. Instead of showing blank screens, I use skeletons or placeholders to improve perceived performance and keep the user engaged while data is being fetched. For data fetching, I often use tools like React Query, which provide caching, background updates, and reduce unnecessary network requests. This helps make the app feel faster even when dealing with remote data. Finally, I monitor performance using tools like Lighthouse and React DevTools Profiler to identify bottlenecks and continuously improve the loading experience. Overall, my goal is to balance real performance optimizations with a smooth user experience.”',
       },
       {
         q: 'How do you ensure code quality?',
