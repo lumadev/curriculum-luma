@@ -61,7 +61,17 @@ const categories = [
       },
       {
         q: 'How do you ensure code quality?',
-        a: 'I follow test-driven development with unit and functional tests, apply SOLID principles and DDD patterns, conduct thorough code reviews, and maintain consistent coding standards. I also prioritize web security best practices in every project.',
+        a: `I ensure code quality and maintainability by combining solid architecture with consistent engineering practices.
+
+        I prefer a domain-driven architecture, organizing code by feature so related logic stays together, improving scalability and reducing coupling.
+
+        For consistency, I enforce code standards and linting using tools like ESLint and Prettier, which helps catch issues early and keeps the codebase uniform.
+
+        I prioritize unit and functional tests to validate both isolated logic and user behavior, ensuring safe refactoring and preventing regressions.
+
+        I also value a strong code review culture, using it as a space for collaboration, knowledge sharing, and improving overall code quality.
+
+        Finally, I follow security best practices, such as input validation, avoiding common vulnerabilities, and monitoring dependencies to keep the application safe.`,
       },
       {
         q: 'How do you approach learning new technologies?',
