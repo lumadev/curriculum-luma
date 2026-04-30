@@ -14,6 +14,10 @@ const categories = [
         a: "I'm a Senior Full Stack Engineer focused on scalable web applications with strong expertise in architecture, performance, scalability, and clean code practices. I have over 14 years of experience designing and building robust, scalable, and maintainable systems using modern web technologies. I have extensive experience in full stack development, working with technologies such as Vue.js, TypeScript, Node.js, PHP, React, Next.js and modern architectures. I care deeply about code quality, performance, and long-term maintainability, and I enjoy solving complex technical problems with simple and well-structured solutions. Beyond code, I value clear communication, ownership, and collaboration. I have experience working closely with engineering, product, and design teams to deliver high-quality software aligned with business goals and user needs.",
       },
       {
+        q: 'What is your tech stack?',
+        a: "I work with Vue.js and React on the frontend, Node.js and PHP on the backend, and MySQL/PostgreSQL for databases. I use TypeScript across the stack for type safety. I'm experienced with Git workflows, CI/CD pipelines, and modern development practices.",
+      },
+      {
         q: 'Why did you choose software engineering?',
         a: "I've always been drawn to problem-solving and building things. Software engineering gives me the ability to create solutions that impact thousands of users. The constant evolution of technology keeps me motivated to learn and grow every day.",
       },
@@ -28,10 +32,6 @@ const categories = [
     label: 'Technical',
     icon: Code,
     questions: [
-      {
-        q: 'What is your tech stack?',
-        a: "I work with Vue.js and React on the frontend, Node.js and PHP on the backend, and MySQL/PostgreSQL for databases. I use TypeScript across the stack for type safety. I'm experienced with Git workflows, CI/CD pipelines, and modern development practices.",
-      },
       {
         q: 'Describe a React project you worked on',
         a: "One project I worked on was an e-commerce platform that supported both ready-to-ship and customizable 3D products. I was responsible for the frontend architecture using React, where I designed reusable components and structured the application to support scalability as new product types were added. One key decision was separating UI components from business logic using hooks and service layers, which made the codebase easier to maintain and test. I also integrated Cloudinary for image handling and optimized loading strategies to improve performance. As a result, we improved page load times and made it easier to introduce new features without affecting existing functionality.",
@@ -93,10 +93,37 @@ const categories = [
     label: 'Problem Solving',
     icon: Target,
     questions: [
-      // {
-      //   q: 'Describe a challenging bug you solved.',
-      //   a: 'I once debugged a complex race condition in an asynchronous data pipeline that caused intermittent data corruption. I systematically isolated the issue using logging and unit tests, identified the root cause in the event ordering, and implemented a proper queue-based solution that eliminated the problem entirely.',
-      // },
+      {
+        q: 'Describe a challenging bug you solved.',
+        a: `We had a production issue in an app built with Vite and Vue.js where users started seeing errors like "Failed to fetch dynamically imported module" right after a deployment.
+
+        What was happening:
+
+        Vite generates static assets with content-based hashes, for example:
+
+        app.abc123.js
+        vendor.xyz456.js
+
+        After a new deploy, those files changed to:
+
+        app.def789.js
+
+        However, some users still had the old index.html cached, which was referencing:
+
+        app.abc123.js ❌ (no longer exists)
+
+        This caused the browser to fail loading the JavaScript modules, resulting in a blank screen.
+
+        Root cause:
+
+        A cache mismatch between index.html (cached) and the newly deployed hashed assets.
+
+        Solution:
+
+        We updated our caching strategy so that index.html is never cached (no-cache headers), while static assets remain cached with long expiration (immutable). We also ensured old build assets were temporarily kept during deployments and added a runtime fallback to reload the page if a chunk fails to load.
+
+        This resolved the issue and improved reliability during deployments.`
+      },
       {
         q: 'How do you approach complex problems?',
         a: 'I break them down into smaller, manageable pieces. I identify the core issue, research potential solutions, prototype quickly, and iterate. I also leverage Domain-Driven Design to ensure the solution aligns with the business domain and is maintainable long-term.',
