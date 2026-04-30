@@ -114,7 +114,7 @@ const categories = [
       },
       {
         q: 'Where do you see yourself in 5 years?',
-        a: 'I see myself as a senior technical leader, driving architectural decisions and mentoring other engineers. I want to continue deepening my expertise while broadening my impact — contributing to products that make a meaningful difference.',
+        a: 'I see myself as a senior technical leader. I want to continue working closely with technologies and projects I have a strong affinity for, as that’s where I do my best work and keep evolving. I also see myself in a company with strong cultural values, where I feel motivated to keep growing and contributing in a meaningful way.'
       },
       {
         q: 'What motivates you?',
