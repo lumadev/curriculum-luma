@@ -118,7 +118,7 @@ const categories = [
       },
       {
         q: 'What motivates you?',
-        a: "Building software that people actually use and benefit from. The satisfaction of solving a hard problem elegantly, seeing a feature go live, and knowing it improves someone's workflow — that drives me every day.",
+        a: "Building software that people actually use and benefit from. The satisfaction of seeing a feature go live and knowing it improves someone's workflow drives me every day. I’m also motivated by working with technologies I have a strong affinity for, as it allows me to stay engaged and continuously improve my skills. On top of that, being part of a company with a positive culture makes a big difference to me—it creates an environment where collaboration thrives and people feel encouraged to do their best work.",
       },
     ],
   },
