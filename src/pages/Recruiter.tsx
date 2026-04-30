@@ -110,7 +110,7 @@ const categories = [
     questions: [
       {
         q: 'What kind of work environment do you thrive in?',
-        a: 'I thrive in environments that value innovation, continuous learning, and autonomy. I enjoy working with teams that embrace agile practices, encourage experimentation, and maintain high engineering standards while fostering a supportive and inclusive culture.',
+        a: 'I enjoy working on projects that follow solid architectural practices and emphasize clean, maintainable code. I value an enriching environment that enables me to be productive and continuously improve. I also prefer being part of teams that treat people with respect and foster a positive atmosphere.',
       },
       {
         q: 'Where do you see yourself in 5 years?',
