@@ -52,9 +52,11 @@ const ProjectDetailsLeft = ({ selectedProject }: Props) => {
             {t("projectDetails.sections.aboutProject")}
           </h4>
           {fullDescription && (
-            <p className="text-muted-foreground leading-relaxed">
-              {fullDescription}
-            </p>
+            <div className="space-y-3 text-sm leading-relaxed text-muted-foreground">
+              {fullDescription.split(/\n\s*\n/).map((paragraph, index) => (
+                <p key={index}>{paragraph}</p>
+              ))}
+            </div>
           )}
         </div>
         <div>
