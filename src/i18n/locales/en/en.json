@@ -79,6 +79,7 @@
     "sectionDescription": "Some of the projects I've worked on"
   },
   "projectDetails": {
+    "deployment": "Live project",
     "tabs": {
       "about": "About",
       "experience": "My Role"
@@ -87,8 +88,7 @@
       "aboutProject": "About the Project",
       "technologies": "Technologies Used",
       "responsibilities": "Key Responsibilities",
-      "gallery": "Gallery",
-      "deployment": "Live deployment"
+      "gallery": "Gallery"
     }
   }
 }

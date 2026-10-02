@@ -79,6 +79,7 @@
     "sectionDescription": "Alguns dos projetos em que trabalhei"
   },
   "projectDetails": {
+    "deployment": "Link do projeto",
     "tabs": {
       "about": "Sobre",
       "experience": "Minha Atuação"
@@ -87,8 +88,7 @@
       "aboutProject": "Sobre o Projeto",
       "technologies": "Tecnologias Utilizadas",
       "responsibilities": "Principais Responsabilidades",
-      "gallery": "Galeria",
-      "deployment": "Deploy disponível"
+      "gallery": "Galeria"
     }
   }
 }
