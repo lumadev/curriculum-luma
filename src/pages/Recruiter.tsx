@@ -105,34 +105,7 @@ const categories = [
     questions: [
       {
         q: 'Describe a challenging bug you solved.',
-        a: `We had a production issue in an app built with Vite and Vue.js where users started seeing errors like "Failed to fetch dynamically imported module" right after a deployment.
-
-        What was happening:
-
-        Vite generates static assets with content-based hashes, for example:
-
-        app.abc123.js
-        vendor.xyz456.js
-
-        After a new deploy, those files changed to:
-
-        app.def789.js
-
-        However, some users still had the old index.html cached, which was referencing:
-
-        app.abc123.js ❌ (no longer exists)
-
-        This caused the browser to fail loading the JavaScript modules, resulting in a blank screen.
-
-        Root cause:
-
-        A cache mismatch between index.html (cached) and the newly deployed hashed assets.
-
-        Solution:
-
-        We updated our caching strategy so that index.html is never cached (no-cache headers), while static assets remain cached with long expiration (immutable). We also ensured old build assets were temporarily kept during deployments and added a runtime fallback to reload the page if a chunk fails to load.
-
-        This resolved the issue and improved reliability during deployments.`
+        a: `Resolved a complex production deployment issue in a Vite/Vue.js application that caused "Failed to fetch dynamically imported module" errors and blank screens after releases. Investigated the interaction between Vite’s content-hashed assets, deployment behavior, and browser caching, identifying a cache mismatch between stale index.html files and newly generated JavaScript chunks. Redesigned the caching strategy to prevent HTML from being cached while keeping versioned static assets highly cacheable, retained previous build assets during deployments, and implemented a runtime fallback for failed chunk loading. This eliminated deployment-related module loading failures and significantly improved application reliability during releases.`
       },
       {
         q: 'How do you approach complex problems?',
@@ -147,7 +120,7 @@ const categories = [
     questions: [
       {
         q: 'What kind of work environment do you thrive in?',
-        a: 'I enjoy working on projects that follow solid architectural practices and emphasize clean, maintainable code. I value an enriching environment that enables me to be productive and continuously improve. I also prefer being part of teams that treat people with respect and foster a positive atmosphere.',
+        a: 'I enjoy working on projects that follow solid architectural practices and emphasize clean, maintainable code. I value an enriching environment that enables me to be productive and continuously improve as a developer. I thrive in an engaging, positive environment where people collaborate, share ideas, and support one another.',
       },
       {
         q: 'Where do you see yourself in 5 years?',
@@ -166,7 +139,7 @@ const categories = [
     questions: [
       {
         q: 'What are you looking for in your next role?',
-        a: "I'm looking for a role where I can work on challenging technical problems, contribute to meaningful products, and grow as an engineer. I value companies with strong engineering culture, and a clear product vision.",
+        a: "I'm looking for international opportunities, primarily in Full Stack roles, where I can tackle challenging technical problems, contribute to meaningful products, and grow as an engineer. I'm especially interested in working with cloud technologies, AI, frontend and backend development, and cache management. The opportunity to work on systems at large scale would be particularly exciting. I also value companies with a strong engineering culture.",
       },
       {
         q: 'What are your salary expectations?',
