@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { ArrowLeft, Briefcase, Code, Lightbulb, MessageSquare, Target, Users } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
+import LanguageSelector from '@/components/LanguageSelector';
 
 const categories = [
   { id: 'background', icon: Briefcase },
@@ -17,8 +18,7 @@ type CategoryContent = { label: string; questions: QuestionAnswer[] };
 
 const Recruiter = () => {
   const [activeCategory, setActiveCategory] = useState<string>('background');
-  const { t, i18n } = useTranslation();
-  const currentLanguage = i18n.resolvedLanguage?.startsWith('pt') ? 'pt-BR' : 'en';
+  const { t } = useTranslation();
 
   return (
     <div className="min-h-screen bg-background text-foreground">
@@ -37,37 +37,7 @@ const Recruiter = () => {
           </span>
 
           <div className="justify-self-end">
-            <div
-              role="group"
-              aria-label={t('recruiter.languageLabel')}
-              className="inline-flex rounded-full border border-border/60 bg-background/70 p-1 shadow-sm"
-            >
-              {([
-                { code: 'en', label: 'English', flag: '🇺🇸', shortLabel: 'EN' },
-                { code: 'pt-BR', label: 'Português', flag: '🇧🇷', shortLabel: 'PT' },
-              ] as const).map((language) => {
-                const isActive = currentLanguage === language.code;
-                return (
-                  <button
-                    key={language.code}
-                    type="button"
-                    aria-pressed={isActive}
-                    aria-label={language.label}
-                    title={language.label}
-                    onClick={() => void i18n.changeLanguage(language.code)}
-                    className={`flex items-center gap-1.5 rounded-full px-2.5 py-1.5 text-xs font-semibold transition-all sm:px-3 sm:text-sm ${
-                      isActive
-                        ? 'bg-primary text-primary-foreground shadow-sm'
-                        : 'text-muted-foreground hover:bg-muted hover:text-foreground'
-                    }`}
-                  >
-                    <span aria-hidden="true" className="text-base leading-none">{language.flag}</span>
-                    <span className="hidden sm:inline">{language.label}</span>
-                    <span className="sm:hidden">{language.shortLabel}</span>
-                  </button>
-                );
-              })}
-            </div>
+            <LanguageSelector />
           </div>
         </div>
       </header>

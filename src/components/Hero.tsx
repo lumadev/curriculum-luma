@@ -41,7 +41,7 @@ const Hero = () => {
             {t("hero.jobTitle")}
           </p>
           {/* Let's build something together */}
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold mb-6 animate-fade-up opacity-0 delay-200">
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold mb-6 animate-fade-up opacity-0 delay-200">
             {t("hero.heading.buildPrefix")}{" "}
             <span className="gradient-text">
               {t("hero.heading.buildHighlight")}

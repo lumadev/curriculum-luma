@@ -52,10 +52,10 @@ const About = () => {
 
           {/* About Content */}
           <div className="glass-card p-8 md:p-12 mb-12">
-            <div className="space-y-6 text-muted-foreground text-lg md:text-xl leading-relaxed">
+            <div className="space-y-6 text-muted-foreground text-base md:text-lg leading-relaxed">
 
               <p>
-                <span className="text-foreground font-medium pr-2 text-lg md:text-xl">
+                <span className="text-foreground font-medium pr-2 text-base md:text-lg">
                   {t("about.description.introStrong")}
                 </span>
                 {t("about.description.introText")}
@@ -63,11 +63,11 @@ const About = () => {
 
               <p>
                 {t("about.description.experienceStart")}{" "}
-                <span className="text-foreground font-medium ml-2 text-lg md:text-xl">
+                <span className="text-foreground font-medium ml-2 text-base md:text-lg">
                   {t("about.description.experienceStrong")},
                 </span>{" "}
                 {t("about.description.experienceMiddle")}
-                <span className="text-foreground font-medium ml-2 text-lg md:text-xl">
+                <span className="text-foreground font-medium ml-2 text-base md:text-lg">
                   {t("about.description.experienceTech")}
                 </span>{" "}
                 {t("about.description.experienceEnd")}

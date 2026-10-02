@@ -1,12 +1,13 @@
 import { useState, useEffect } from 'react';
 import { ArrowDown, Menu, X } from 'lucide-react';
 import { useTranslation } from "react-i18next";
+import LanguageSelector from '@/components/LanguageSelector';
 
 const navItems = [
   { labelKey: 'header.about', href: '#about' },
   { labelKey: 'header.skills', href: '#skills' },
   { labelKey: 'header.projects', href: '#projects' },
-  { labelKey: 'Recruiter', href: '/recruiter' },
+  { labelKey: 'header.recruiter', href: '/recruiter' },
 ];
 
 const Header = () => {
@@ -42,22 +43,28 @@ const Header = () => {
             ))}
           </ul>
 
-          {/* CTA Button */}
-          <a
-            href="#projects"
-            className="group hidden md:inline-flex items-center gap-2 rounded-full border border-border/70 bg-background/40 px-4 py-2 text-sm font-medium text-foreground transition-all duration-300 hover:border-primary/50 hover:bg-primary/10 hover:text-primary"
-          >
-            {t("header.viewWork")}
-            <ArrowDown size={16} aria-hidden="true" className="transition-transform duration-300 group-hover:translate-y-0.5" />
-          </a>
+          <div className="ml-auto flex items-center gap-3">
+            {/* CTA Button */}
+            <a
+              href="#projects"
+              className="group hidden md:inline-flex items-center gap-2 rounded-full border border-border/70 bg-background/40 px-4 py-2 text-sm font-medium text-foreground transition-all duration-300 hover:border-primary/50 hover:bg-primary/10 hover:text-primary"
+            >
+              {t("header.viewWork")}
+              <ArrowDown size={16} aria-hidden="true" className="transition-transform duration-300 group-hover:translate-y-0.5" />
+            </a>
 
-          {/* Mobile Menu Button */}
-          <button
-            className="md:hidden p-2"
-            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-          >
-            {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
-          </button>
+            <LanguageSelector />
+
+            {/* Mobile Menu Button */}
+            <button
+              className="p-2 md:hidden"
+              aria-label={isMobileMenuOpen ? 'Close navigation menu' : 'Open navigation menu'}
+              aria-expanded={isMobileMenuOpen}
+              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+            >
+              {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
+            </button>
+          </div>
         </nav>
 
         {/* Mobile Menu */}

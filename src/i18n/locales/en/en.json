@@ -3,7 +3,8 @@
     "viewWork": "View Work",
     "about": "About",
     "skills": "Skills",
-    "projects": "Projects"
+    "projects": "Projects",
+    "recruiter": "Recruiter"
   },
   "about": {
     "sectionSubtitle": "Get to Know Me",
@@ -15,7 +16,7 @@
       "experienceStart": "I have extensive experience in",
       "experienceStrong": "full stack development",
       "experienceMiddle": "working with technologies such as",
-      "experienceTech": "Vue.js, TypeScript, Node.js, PHP, React, Next.js",
+      "experienceTech": "Vue.js, TypeScript, Node.js, React, Next.js",
       "experienceEnd": "and modern architectures. I care deeply about code quality, performance, and long-term maintainability, and I enjoy solving complex technical problems with simple and well-structured solutions.",
       "communicationStart": "Beyond code, I value",
       "communicationStrong": "clear communication",
