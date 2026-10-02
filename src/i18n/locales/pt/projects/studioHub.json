@@ -1,0 +1,15 @@
+{
+  "title": "Studio Hub",
+  "description": "Ferramenta web de produtividade para um estúdio de jogos, desenvolvida de ponta a ponta com IA e publicada no Google Cloud.",
+  "fullDescription": "Studio Hub é uma ferramenta web de produtividade desenvolvida para um estúdio de jogos, onde atuo desde maio de 2026. Desenvolvi todo o projeto: banco de dados, backend, frontend e deploy no Google Cloud.\n\nO projeto foi construído inteiramente com auxílio de IA. A arquitetura e as regras fornecidas à IA foram definidas a partir de padrões de outros projetos meus em React, que utilizam arquitetura modular.\n\nCom o projeto, desenvolvi habilidades em Google Cloud e no controle de custos na nuvem.",
+  "role": "Full Stack Developer",
+  "roleDescription": "Responsável pelo desenvolvimento completo da ferramenta, incluindo banco de dados, backend, frontend e deploy em nuvem.",
+  "responsibilities": [
+    "Modelagem e gerenciamento de dados com PostgreSQL",
+    "Desenvolvimento do backend com Server Functions",
+    "Construção da interface com React e gerenciamento de dados com TanStack Query",
+    "Definição da arquitetura modular e das regras para desenvolvimento assistido por IA",
+    "Deploy e operação no Google Cloud",
+    "Monitoramento e controle de custos na nuvem"
+  ]
+}

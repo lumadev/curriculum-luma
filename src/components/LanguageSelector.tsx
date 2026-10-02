@@ -1,8 +1,8 @@
 import { useTranslation } from 'react-i18next';
 
 const languages = [
-  { code: 'en', label: 'English', flag: '🇺🇸' },
-  { code: 'pt-BR', label: 'Português', flag: '🇧🇷' },
+  { code: 'en', label: 'English', abbreviation: 'EN' },
+  { code: 'pt-BR', label: 'Português', abbreviation: 'PT-BR' },
 ] as const;
 
 const LanguageSelector = () => {
@@ -32,7 +32,7 @@ const LanguageSelector = () => {
                 : 'border-transparent opacity-75 hover:bg-muted hover:opacity-100'
             }`}
           >
-            <span aria-hidden="true" className="text-lg leading-none">{language.flag}</span>
+            <span aria-hidden="true" className="text-[10px] font-semibold leading-none">{language.abbreviation}</span>
           </button>
         );
       })}

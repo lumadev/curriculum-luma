@@ -12,8 +12,10 @@ import { realEstateProject } from "./icarus/realEstateProject";
 import { cinepediaProject } from "./personal/cinepediaProject";
 import { checkoutProject } from "./gsurf/checkoutProject";
 import { ecommerce3dProject } from "./personal/ecommerce-3d";
+import { studioHubProject } from "./personal/studioHubProject";
 
 export const projectsData: Project[] = [
+  studioHubProject,
   musicProject,
   ecommerce3dProject,
   merchantProject,
