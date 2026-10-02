@@ -2,7 +2,7 @@ import { Project } from "../projectTypes";
 
 export const ecommerce3dProject: Project = {
   id: "ecommerce3d",
-  tags: ["TypeScript", "React", "PostgreSQL", "Node.js", "NestJS", "Ecommerce"],
+  tags: ["TypeScript", "React", "PostgreSQL", "Node.js", "NestJS", "Ecommerce", "Vercel", "Render"],
   image: "/ecommerce3d/ecommerce.png",
   galleryImages: [
     "/ecommerce3d/ecommerce.png",
