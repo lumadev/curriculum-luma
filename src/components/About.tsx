@@ -80,6 +80,10 @@ const About = () => {
                 </span>
                 {t("about.description.communicationEnd")}
               </p>
+
+              <p className="text-sm text-muted-foreground/80">
+                {t("about.description.industries")}
+              </p>
             </div>
           </div>
 

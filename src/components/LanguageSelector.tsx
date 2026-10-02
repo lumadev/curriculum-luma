@@ -26,13 +26,13 @@ const LanguageSelector = () => {
             aria-label={language.label}
             title={language.label}
             onClick={() => void i18n.changeLanguage(language.code)}
-            className={`grid size-9 place-items-center rounded-full border transition-colors ${
+            className={`flex h-9 items-center justify-center rounded-full border px-3 transition-colors ${
               isActive
                 ? 'border-primary/30 bg-primary/10'
                 : 'border-transparent opacity-75 hover:bg-muted hover:opacity-100'
             }`}
           >
-            <span aria-hidden="true" className="text-[10px] font-semibold leading-none">{language.abbreviation}</span>
+            <span aria-hidden="true" className="text-xs font-semibold leading-none">{language.abbreviation}</span>
           </button>
         );
       })}
