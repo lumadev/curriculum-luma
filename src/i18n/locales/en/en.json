@@ -90,5 +90,67 @@
       "responsibilities": "Key Responsibilities",
       "gallery": "Gallery"
     }
+  },
+  "recruiter": {
+    "backToPortfolio": "Back to Portfolio",
+    "area": "Recruiter Area",
+    "languageLabel": "Choose language",
+    "title": { "prefix": "Common", "highlight": "Q&A" },
+    "description": "A curated guide with answers to frequently asked questions by recruiters and hiring managers. Feel free to explore or share this page.",
+    "footer": {
+      "reference": "This page is a quick reference for interviews and recruiter conversations.",
+      "contact": "Feel free to reach out for a more in-depth discussion."
+    },
+    "categories": {
+      "background": {
+        "label": "Background",
+        "questions": [
+          { "q": "Tell me about yourself.", "a": "I'm a Senior Full Stack Engineer with over 14 years of experience building and maintaining web applications. Throughout my career, I've developed a strong focus on quality: I aim to deliver reliable, well-structured, and sustainable solutions while keeping business needs and the user experience in mind. I also have extensive experience investigating and resolving critical production issues, working methodically and efficiently to identify root causes, minimize impact, and prevent recurrence. I enjoy turning complex situations into clear, lasting solutions. I value transparent communication, ownership, and close collaboration with engineering, product, and design teams to deliver consistent results." },
+          { "q": "What is your tech stack?", "a": "I work with Vue.js and React on the frontend, Node.js and PHP on the backend, and MySQL/PostgreSQL for databases. I use TypeScript across the stack for type safety. I'm experienced with Git workflows, CI/CD pipelines, and modern development practices." },
+          { "q": "Why did you choose software engineering?", "a": "I've always been drawn to problem-solving and building things. Software engineering gives me the ability to create solutions that impact thousands of users. The constant evolution of technology keeps me motivated to learn and grow every day." },
+          { "q": "What are your greatest strengths?", "a": "My ability to understand complex business requirements and translate them into well-architected solutions. I write testable, maintainable code following SOLID principles and DDD patterns. I communicate effectively with both technical and non-technical stakeholders." }
+        ]
+      },
+      "technical": {
+        "label": "Technical",
+        "questions": [
+          { "q": "Describe a React project you worked on", "a": "One project I worked on was an e-commerce platform that supported both ready-to-ship and customizable 3D products. I was responsible for the frontend architecture using React, where I designed reusable components and structured the application to support scalability as new product types were added. One key decision was separating UI components from business logic using hooks and service layers, which made the codebase easier to maintain and test. I also integrated Cloudinary for image handling and optimized loading strategies to improve performance. As a result, we improved page load times and made it easier to introduce new features without affecting existing functionality." },
+          { "q": "Loading Performance in React", "a": "When I talk about loading performance in React, I usually think about how quickly the user can see and interact with meaningful content, not just how fast the app technically loads. I approach this in a few key ways. First, I use code splitting and lazy loading to reduce the initial bundle size. With tools like React.lazy and dynamic imports, I make sure only the necessary code is loaded upfront, and the rest is loaded on demand. I also focus on optimizing asset delivery, especially images. For example, I use services like Cloudinary to serve properly sized and compressed images, which significantly reduces load time. Another important aspect is handling loading states effectively. Instead of showing blank screens, I use skeletons or placeholders to improve perceived performance and keep the user engaged while data is being fetched. For data fetching, I often use tools like React Query, which provide caching, background updates, and reduce unnecessary network requests. This helps make the app feel faster even when dealing with remote data. Finally, I monitor performance using tools like Lighthouse and React DevTools Profiler to identify bottlenecks and continuously improve the loading experience. Overall, my goal is to balance real performance optimizations with a smooth user experience." },
+          { "q": "How do you manage state in complex applications (React)?", "a": "In complex React applications, I approach state management by first categorizing state based on scope and responsibility.\n\nFor local UI state (like modals, inputs, toggles), I keep it close to the component using useState or useReducer.\n\nFor shared state across components, I prefer lightweight solutions like Context combined with useReducer, but only when the scope is controlled to avoid unnecessary re-renders.\n\nWhen the application grows and state becomes more complex—especially with async logic and cross-feature communication—I use dedicated state management tools like Redux Toolkit or Zustand, depending on the use case.\n\nI separate server state from client state because they have different concerns. Server state is asynchronous, shared, and needs caching and synchronization, so I use tools like React Query to handle things like caching, background updates, and invalidation. This removes a lot of manual state management. For client state, like UI interactions or local inputs, I keep it simple using useState or useReducer.\n\nArchitecturally, I focus on:\n\nKeeping state as close as possible to where it’s used\nAvoiding unnecessary global state\nNormalizing complex data structures\nSplitting state by domain or feature" },
+          { "q": "How do you ensure code quality?", "a": "I ensure code quality and maintainability by combining solid architecture with consistent engineering practices.\n\nI prefer a domain-driven architecture, organizing code by feature so related logic stays together, improving scalability and reducing coupling.\n\nFor consistency, I enforce code standards and linting using tools like ESLint and Prettier, which helps catch issues early and keeps the codebase uniform.\n\nI prioritize unit and functional tests to validate both isolated logic and user behavior, ensuring safe refactoring and preventing regressions.\n\nI also value a strong code review culture, using it as a space for collaboration, knowledge sharing, and improving overall code quality.\n\nFinally, I follow security best practices, such as input validation, avoiding common vulnerabilities, and monitoring dependencies to keep the application safe." },
+          { "q": "How do you approach learning new technologies?", "a": "I start by understanding the problem the technology solves, then build small proof-of-concept projects. I read official documentation, follow community best practices, and apply what I learn in real-world scenarios as quickly as possible." }
+        ]
+      },
+      "teamwork": {
+        "label": "Teamwork",
+        "questions": [
+          { "q": "How do you work in a team?", "a": "I believe in clear communication, mutual respect, and shared ownership. I actively participate in code reviews, pair programming sessions, and team discussions. I value diverse perspectives and believe the best solutions come from collaboration." },
+          { "q": "How do you handle disagreements with colleagues?", "a": "I focus on the technical merits of each approach rather than personal preferences. I present data and examples to support my position, remain open to other viewpoints, and ultimately prioritize what's best for the project and the team." },
+          { "q": "How do you handle feedback?", "a": "I see feedback as an opportunity to grow. I actively seek constructive criticism from peers and leads, reflect on it objectively, and implement changes where appropriate. I also provide thoughtful, respectful feedback to others." }
+        ]
+      },
+      "problem-solving": {
+        "label": "Problem Solving",
+        "questions": [
+          { "q": "Describe a challenging bug you solved.", "a": "Resolved a complex production deployment issue in a Vite/Vue.js application that caused \"Failed to fetch dynamically imported module\" errors and blank screens after releases. Investigated the interaction between Vite’s content-hashed assets, deployment behavior, and browser caching, identifying a cache mismatch between stale index.html files and newly generated JavaScript chunks. Redesigned the caching strategy to prevent HTML from being cached while keeping versioned static assets highly cacheable, retained previous build assets during deployments, and implemented a runtime fallback for failed chunk loading. This eliminated deployment-related module loading failures and significantly improved application reliability during releases." },
+          { "q": "How do you approach complex problems?", "a": "I break them down into smaller, manageable pieces. I identify the core issue, research potential solutions, prototype quickly, and iterate. I also leverage Domain-Driven Design to ensure the solution aligns with the business domain and is maintainable long-term." }
+        ]
+      },
+      "culture": {
+        "label": "Culture Fit",
+        "questions": [
+          { "q": "What kind of work environment do you thrive in?", "a": "I enjoy working on projects that follow solid architectural practices and emphasize clean, maintainable code. I value an enriching environment that enables me to be productive and continuously improve as a developer. I thrive in an engaging, positive environment where people collaborate, share ideas, and support one another." },
+          { "q": "Where do you see yourself in 5 years?", "a": "I see myself as a senior technical leader. I want to continue working closely with technologies and projects I have a strong affinity for, as that’s where I do my best work and keep evolving. I also see myself in a company with strong cultural values, where I feel motivated to keep growing and contributing in a meaningful way." },
+          { "q": "What motivates you?", "a": "Building software that people actually use and benefit from. The satisfaction of seeing a feature go live and knowing it improves someone's workflow drives me every day. I’m also motivated by working with technologies I have a strong affinity for, as it allows me to stay engaged and continuously improve my skills. On top of that, being part of a company with a positive culture makes a big difference to me—it creates an environment where collaboration thrives and people feel encouraged to do their best work." }
+        ]
+      },
+      "goals": {
+        "label": "Goals",
+        "questions": [
+          { "q": "What are you looking for in your next role?", "a": "I'm looking for international opportunities, primarily in Full Stack roles, where I can tackle challenging technical problems, contribute to meaningful products, and grow as an engineer. I'm especially interested in working with cloud technologies, AI, frontend and backend development, and cache management. The opportunity to work on systems at large scale would be particularly exciting. I also value companies with a strong engineering culture." },
+          { "q": "What are your salary expectations?", "a": "I'm open to discussing compensation based on the role's scope, responsibilities, and the overall benefits package. I prioritize finding the right fit in terms of culture, growth opportunities, and technical challenges." }
+        ]
+      }
+    }
   }
 }

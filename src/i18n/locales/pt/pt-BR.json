@@ -90,5 +90,67 @@
       "responsibilities": "Principais Responsabilidades",
       "gallery": "Galeria"
     }
+  },
+  "recruiter": {
+    "backToPortfolio": "Voltar ao portfólio",
+    "area": "Área para recrutadores",
+    "languageLabel": "Selecionar idioma",
+    "title": { "prefix": "Perguntas e", "highlight": "Respostas" },
+    "description": "Um guia com respostas às perguntas mais frequentes de recrutadores e gestores de contratação. Fique à vontade para explorar ou compartilhar esta página.",
+    "footer": {
+      "reference": "Esta página é uma referência rápida para entrevistas e conversas com recrutadores.",
+      "contact": "Fique à vontade para entrar em contato para uma conversa mais detalhada."
+    },
+    "categories": {
+      "background": {
+        "label": "Sobre mim",
+        "questions": [
+          { "q": "Fale um pouco sobre você.", "a": "Sou Engenheira Full Stack Sênior, com mais de 14 anos de experiência desenvolvendo e mantendo aplicações web. Ao longo da minha trajetória, construí um olhar atento à qualidade: busco soluções confiáveis, bem estruturadas e sustentáveis, sempre considerando as necessidades do negócio e a experiência das pessoas que usam o produto. Também tenho ampla experiência investigando e resolvendo problemas críticos em produção, com agilidade e método para identificar a causa raiz, reduzir impactos e evitar recorrências. Gosto de transformar situações complexas em soluções claras e duradouras. Valorizo a comunicação transparente, o senso de responsabilidade e a colaboração com equipes de engenharia, produto e design para entregar resultados consistentes." },
+          { "q": "Qual é a sua stack de tecnologias?", "a": "Trabalho com Vue.js e React no front-end, Node.js e PHP no back-end, e MySQL/PostgreSQL em bancos de dados. Uso TypeScript em toda a stack para garantir segurança de tipos. Tenho experiência com fluxos de trabalho em Git, pipelines de CI/CD e práticas modernas de desenvolvimento." },
+          { "q": "Por que você escolheu engenharia de software?", "a": "Sempre gostei de resolver problemas e construir coisas. A engenharia de software me permite criar soluções que impactam milhares de usuários. A constante evolução da tecnologia me motiva a aprender e crescer todos os dias." },
+          { "q": "Quais são seus principais pontos fortes?", "a": "Minha capacidade de compreender requisitos de negócio complexos e transformá-los em soluções bem arquitetadas. Escrevo código testável e de fácil manutenção, seguindo os princípios SOLID e padrões de DDD. Também me comunico bem com pessoas técnicas e não técnicas." }
+        ]
+      },
+      "technical": {
+        "label": "Técnico",
+        "questions": [
+          { "q": "Descreva um projeto em React no qual você trabalhou.", "a": "Um dos projetos em que trabalhei foi uma plataforma de e-commerce com produtos 3D disponíveis para pronta entrega e opções personalizáveis. Fui responsável pela arquitetura do front-end em React, onde projetei componentes reutilizáveis e estruturei a aplicação para permitir sua expansão à medida que novos tipos de produto fossem adicionados. Uma decisão importante foi separar os componentes de interface da lógica de negócio usando hooks e camadas de serviço, o que facilitou a manutenção e os testes do código. Também integrei o Cloudinary para gerenciar imagens e otimizei o carregamento para melhorar a performance. Como resultado, reduzimos o tempo de carregamento das páginas e facilitamos a implementação de novos recursos sem afetar as funcionalidades existentes." },
+          { "q": "Performance de carregamento em React", "a": "Ao falar sobre performance de carregamento em React, penso principalmente em quão rápido o usuário consegue visualizar e interagir com conteúdo relevante, não apenas na velocidade técnica de carregamento da aplicação. Trabalho nisso de algumas formas. Primeiro, uso divisão de código e carregamento sob demanda para reduzir o tamanho do pacote inicial. Com ferramentas como React.lazy e importações dinâmicas, garanto que apenas o código necessário seja carregado inicialmente e que o restante seja carregado quando necessário. Também otimizo a entrega de recursos, especialmente imagens. Por exemplo, uso serviços como o Cloudinary para fornecer imagens no tamanho adequado e comprimidas, reduzindo significativamente o tempo de carregamento. Outro aspecto importante é tratar bem os estados de carregamento. Em vez de deixar a tela em branco, uso skeletons ou placeholders para melhorar a percepção de velocidade e manter o usuário informado enquanto os dados são carregados. Para buscar dados, costumo usar ferramentas como React Query, que oferecem cache e atualizações em segundo plano, além de reduzir requisições desnecessárias. Isso ajuda a aplicação a parecer mais rápida mesmo ao lidar com dados remotos. Por fim, monitoro a performance com ferramentas como Lighthouse e React DevTools Profiler para identificar gargalos e aprimorar continuamente o carregamento. Meu objetivo é equilibrar otimizações reais de performance com uma experiência fluida para o usuário." },
+          { "q": "Como você gerencia o estado em aplicações React complexas?", "a": "Em aplicações React complexas, começo organizando o gerenciamento de estado de acordo com seu escopo e responsabilidade.\n\nPara estados locais da interface, como modais, campos e alternâncias, mantenho o estado próximo ao componente usando useState ou useReducer.\n\nPara estados compartilhados entre componentes, prefiro soluções leves, como Context combinado com useReducer, mas somente quando o escopo é controlado para evitar renderizações desnecessárias.\n\nQuando a aplicação cresce e o estado fica mais complexo — especialmente com lógica assíncrona e comunicação entre funcionalidades — uso ferramentas dedicadas, como Redux Toolkit ou Zustand, de acordo com o caso.\n\nSeparo o estado do servidor do estado do cliente porque eles têm necessidades diferentes. O estado do servidor é assíncrono, compartilhado e precisa de cache e sincronização; por isso, uso ferramentas como React Query para cache, atualizações em segundo plano e invalidação. Isso elimina boa parte do gerenciamento manual. Para o estado do cliente, como interações da interface e campos locais, mantenho a solução simples com useState ou useReducer.\n\nEm termos de arquitetura, priorizo:\n\nManter o estado o mais próximo possível de onde é utilizado\nEvitar estado global desnecessário\nNormalizar estruturas de dados complexas\nDividir o estado por domínio ou funcionalidade" },
+          { "q": "Como você garante a qualidade do código?", "a": "Garanto a qualidade e a facilidade de manutenção do código combinando uma arquitetura sólida com práticas de engenharia consistentes.\n\nPrefiro uma arquitetura orientada ao domínio, organizando o código por funcionalidade para manter a lógica relacionada agrupada, melhorar a escalabilidade e reduzir o acoplamento.\n\nPara manter a consistência, aplico padrões de código e análise estática com ferramentas como ESLint e Prettier, que ajudam a identificar problemas cedo e manter o código uniforme.\n\nPriorizo testes unitários e funcionais para validar tanto a lógica isolada quanto o comportamento do usuário, permitindo refatorações seguras e prevenindo regressões.\n\nTambém valorizo uma cultura sólida de revisão de código, usando-a para colaborar, compartilhar conhecimento e melhorar a qualidade geral do software.\n\nPor fim, sigo boas práticas de segurança, como validar entradas, evitar vulnerabilidades comuns e monitorar dependências para manter a aplicação segura." },
+          { "q": "Como você aprende novas tecnologias?", "a": "Começo entendendo qual problema a tecnologia resolve e, em seguida, desenvolvo pequenos projetos de prova de conceito. Leio a documentação oficial, sigo as boas práticas da comunidade e aplico o que aprendo em situações reais o quanto antes." }
+        ]
+      },
+      "teamwork": {
+        "label": "Trabalho em equipe",
+        "questions": [
+          { "q": "Como você trabalha em equipe?", "a": "Acredito em comunicação clara, respeito mútuo e responsabilidade compartilhada. Participo ativamente de revisões de código, sessões de programação em dupla e discussões do time. Valorizo diferentes perspectivas e acredito que as melhores soluções surgem da colaboração." },
+          { "q": "Como você lida com divergências com colegas?", "a": "Concentro-me nos méritos técnicos de cada abordagem, e não em preferências pessoais. Apresento dados e exemplos para embasar meu ponto de vista, mantenho a abertura para outras perspectivas e, no fim, priorizo o que é melhor para o projeto e para a equipe." },
+          { "q": "Como você lida com feedback?", "a": "Vejo o feedback como uma oportunidade de crescimento. Busco ativamente críticas construtivas de colegas e lideranças, reflito sobre elas com objetividade e faço ajustes quando apropriado. Também ofereço feedback cuidadoso e respeitoso às outras pessoas." }
+        ]
+      },
+      "problem-solving": {
+        "label": "Resolução de problemas",
+        "questions": [
+          { "q": "Descreva um bug desafiador que você resolveu.", "a": "Resolvi um problema complexo de publicação em produção em uma aplicação Vite/Vue.js, que causava erros \"Failed to fetch dynamically imported module\" e telas em branco após as atualizações. Investiguei a interação entre os arquivos com hash de conteúdo do Vite, o processo de publicação e o cache do navegador, identificando uma incompatibilidade entre páginas index.html desatualizadas e novos arquivos JavaScript. Redesenhei a estratégia de cache para impedir o armazenamento de HTML em cache e, ao mesmo tempo, manter os recursos estáticos versionados altamente cacheáveis; preservei os arquivos da versão anterior durante as publicações e implementei uma alternativa em tempo de execução para falhas no carregamento de módulos. Isso eliminou as falhas de carregamento relacionadas às publicações e melhorou significativamente a confiabilidade da aplicação durante os lançamentos." },
+          { "q": "Como você aborda problemas complexos?", "a": "Divido o problema em partes menores e mais fáceis de gerenciar. Identifico a causa principal, pesquiso possíveis soluções, crio protótipos rapidamente e faço iterações. Também aplico Domain-Driven Design para garantir que a solução esteja alinhada ao domínio do negócio e possa ser mantida a longo prazo." }
+        ]
+      },
+      "culture": {
+        "label": "Cultura e ambiente",
+        "questions": [
+          { "q": "Em que tipo de ambiente de trabalho você se desenvolve melhor?", "a": "Gosto de trabalhar em projetos que seguem boas práticas de arquitetura e priorizam código limpo e de fácil manutenção. Valorizo um ambiente enriquecedor, que me permita ser produtiva e continuar evoluindo como desenvolvedora. Trabalho melhor em um ambiente positivo e envolvente, onde as pessoas colaboram, compartilham ideias e apoiam umas às outras." },
+          { "q": "Onde você se vê daqui a 5 anos?", "a": "Vejo-me como uma liderança técnica sênior. Quero continuar trabalhando de perto com tecnologias e projetos pelos quais tenho afinidade, pois é onde faço meu melhor trabalho e continuo evoluindo. Também me vejo em uma empresa com valores culturais sólidos, onde me sinta motivada a crescer e contribuir de forma significativa." },
+          { "q": "O que motiva você?", "a": "Construir software que as pessoas realmente usam e que traz benefícios. A satisfação de ver um recurso entrar em produção e saber que ele melhora o fluxo de trabalho de alguém me motiva todos os dias. Também me motiva trabalhar com tecnologias pelas quais tenho afinidade, pois isso me mantém engajada e me permite aprimorar continuamente minhas habilidades. Além disso, fazer parte de uma empresa com uma cultura positiva faz muita diferença: cria um ambiente onde a colaboração prospera e as pessoas se sentem incentivadas a dar o melhor de si." }
+        ]
+      },
+      "goals": {
+        "label": "Objetivos",
+        "questions": [
+          { "q": "O que você busca em sua próxima oportunidade?", "a": "Busco oportunidades internacionais, principalmente em funções Full Stack, nas quais eu possa enfrentar desafios técnicos, contribuir para produtos relevantes e crescer como engenheira. Tenho especial interesse em trabalhar com tecnologias de nuvem, IA, desenvolvimento front-end e back-end e gerenciamento de cache. A oportunidade de trabalhar com sistemas em grande escala seria especialmente empolgante. Também valorizo empresas com uma cultura de engenharia forte." },
+          { "q": "Quais são suas expectativas salariais?", "a": "Estou aberta a conversar sobre remuneração de acordo com o escopo da função, as responsabilidades e o pacote geral de benefícios. Priorizo encontrar uma oportunidade que combine com meus valores em relação à cultura, às possibilidades de crescimento e aos desafios técnicos." }
+        ]
+      }
+    }
   }
 }
