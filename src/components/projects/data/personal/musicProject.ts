@@ -4,10 +4,11 @@ export const musicProject: Project = {
   id: "music",
   deploymentUrl: "https://makeups-front.vercel.app/",
   tags: ["React", "Node.js", "Express.js", "Vercel"],
-  image: "/makeupProject/makeups-login.png",
+  image: "makeups/makeups-login.png",
   galleryImages: [
-    "/makeupProject/makeups-list.png",
-    "/makeupProject/initial-page.png",
+    "makeups/initial-page-dark.png",
+    "makeups/makeups-list.png",
+    "makeups/initial-page.png",
   ],
   isFavorite: true,
 };
