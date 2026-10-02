@@ -47,9 +47,6 @@ const Recruiter = () => {
           <h1 className="mb-4 font-display text-4xl font-bold md:text-5xl">
             {t('recruiter.title.prefix')} <span className="gradient-text">{t('recruiter.title.highlight')}</span>
           </h1>
-          <p className="mx-auto max-w-2xl text-lg text-muted-foreground">
-            {t('recruiter.description')}
-          </p>
         </div>
 
         <div className="mb-10 flex flex-wrap justify-center gap-2">
