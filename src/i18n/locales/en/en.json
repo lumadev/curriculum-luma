@@ -87,7 +87,8 @@
       "aboutProject": "About the Project",
       "technologies": "Technologies Used",
       "responsibilities": "Key Responsibilities",
-      "gallery": "Gallery"
+      "gallery": "Gallery",
+      "deployment": "Live deployment"
     }
   }
 }

@@ -2,7 +2,8 @@ import { Project } from "../projectTypes";
 
 export const musicProject: Project = {
   id: "music",
-  tags: ["React", "Node.js", "Express.js"],
+  deploymentUrl: "https://makeups-front.vercel.app/",
+  tags: ["React", "Node.js", "Express.js", "Vercel"],
   image: "/makeupProject/makeups-login.png",
   galleryImages: [
     "/makeupProject/makeups-list.png",
