@@ -50,7 +50,7 @@ const ProjectDetailsDialog = ({
               href={project.deploymentUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-sm text-muted-foreground underline underline-offset-4 hover:text-primary break-all"
+              className="text-xs text-muted-foreground underline underline-offset-4 hover:text-primary break-all"
             >
               {t("projectDetails.deployment")}: {project.deploymentUrl}
             </a>

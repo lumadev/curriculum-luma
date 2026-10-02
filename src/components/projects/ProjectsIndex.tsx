@@ -72,7 +72,7 @@ const Projects = () => {
 
   return (
     <>
-      <section id="projects" className="py-24 relative">
+      <section id="projects" className="pt-12 pb-24 relative">
         <div className="container mx-auto px-6">
 
           <ProjectsHeader />

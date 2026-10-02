@@ -1,4 +1,4 @@
-import { ArrowDown } from 'lucide-react';
+import { ArrowRight, ChevronDown } from 'lucide-react';
 import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 import { useTranslation } from "react-i18next";
 
@@ -25,7 +25,7 @@ const Hero = () => {
     <div className="absolute inset-0 bg-gradient-to-b from-transparent via-background/50 to-background pointer-events-none" />
 
     <div className="container mx-auto px-6 relative">
-      <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
+      <div className="flex flex-col items-center gap-12 lg:flex-row lg:items-start lg:gap-20">
         {/* Photo */}
         <div className="relative animate-fade-up order-1 lg:order-1">
           <div className="w-64 h-64 md:w-80 md:h-80 rounded-2xl overflow-hidden relative animate-pulse-glow">
@@ -66,8 +66,9 @@ const Hero = () => {
 
           {/* CTA Buttons */}
           <div className="flex flex-wrap items-center justify-center lg:justify-start gap-4 animate-fade-up opacity-0 delay-500">
-            <a href="#projects" className="px-8 py-3 border border-border rounded-full font-medium text-foreground hover:bg-secondary transition-all duration-300">
+            <a href="#projects" className="group inline-flex items-center gap-2 rounded-full bg-primary px-7 py-3.5 font-semibold text-primary-foreground shadow-lg shadow-primary/20 transition-all duration-300 hover:-translate-y-0.5 hover:bg-primary/90 hover:shadow-xl hover:shadow-primary/25 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary">
               {t("hero.actions.checkProjects")}
+              <ArrowRight size={18} aria-hidden="true" className="transition-transform duration-300 group-hover:translate-x-1" />
             </a>
           </div>
         </div>
@@ -76,8 +77,8 @@ const Hero = () => {
       {/* Scroll indicator */}
       <button onClick={() => document.getElementById('about')?.scrollIntoView({
       behavior: 'smooth'
-    })} className="absolute bottom-10 left-1/2 -translate-x-1/2 p-3 rounded-full bg-secondary/50 hover:bg-secondary text-muted-foreground hover:text-foreground transition-all duration-300 hover:scale-110" aria-label="Scroll to about section">
-        <ArrowDown size={24} />
+      })} className="group absolute bottom-10 left-1/2 -translate-x-1/2 p-3 rounded-full bg-secondary/50 hover:bg-secondary text-muted-foreground hover:text-foreground transition-all duration-300 hover:scale-110" aria-label={t("hero.accessibility.scrollToAbout")}>
+        <ChevronDown size={24} aria-hidden="true" className="transition-transform duration-300 group-hover:translate-y-1" />
       </button>
     </div>
   </section>;

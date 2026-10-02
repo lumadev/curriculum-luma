@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Menu, X } from 'lucide-react';
+import { ArrowDown, Menu, X } from 'lucide-react';
 import { useTranslation } from "react-i18next";
 
 const navItems = [
@@ -45,9 +45,10 @@ const Header = () => {
           {/* CTA Button */}
           <a
             href="#projects"
-            className="hidden md:inline-flex items-center gap-2 px-5 py-2.5 bg-primary text-primary-foreground rounded-full font-medium text-sm hover:opacity-90 transition-opacity"
+            className="group hidden md:inline-flex items-center gap-2 rounded-full border border-border/70 bg-background/40 px-4 py-2 text-sm font-medium text-foreground transition-all duration-300 hover:border-primary/50 hover:bg-primary/10 hover:text-primary"
           >
             {t("header.viewWork")}
+            <ArrowDown size={16} aria-hidden="true" className="transition-transform duration-300 group-hover:translate-y-0.5" />
           </a>
 
           {/* Mobile Menu Button */}
@@ -77,10 +78,11 @@ const Header = () => {
               <li>
                 <a
                   href="#projects"
-                  className="inline-flex items-center gap-2 px-5 py-2.5 bg-primary text-primary-foreground rounded-full font-medium text-sm"
+                  className="group inline-flex items-center gap-2 rounded-full border border-border/70 bg-background/40 px-4 py-2 text-sm font-medium text-foreground transition-all duration-300 hover:border-primary/50 hover:bg-primary/10 hover:text-primary"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
                   {t("header.viewWork")}
+                  <ArrowDown size={16} aria-hidden="true" className="transition-transform duration-300 group-hover:translate-y-0.5" />
                 </a>
               </li>
             </ul>

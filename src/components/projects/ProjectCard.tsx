@@ -74,21 +74,21 @@ const ProjectCard = ({ project, onClick }: Props) => {
         <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-background/70">
           <div className="flex items-center gap-2 px-4 py-2 bg-primary text-primary-foreground rounded-full">
             <Eye size={20} />
-            <span className="text-base md:text-lg">View More</span>
+            <span className="text-sm md:text-base">View More</span>
           </div>
         </div>
       </div>
 
       <div className="p-6">
         {title && (
-          <h3 className="font-display font-semibold text-xl text-foreground mb-2 flex items-center gap-2">
+          <h3 className="font-display font-semibold text-lg text-foreground mb-2 flex items-center gap-2">
             {title}
             {project.isFavorite && <Star size={16} className="text-primary fill-primary shrink-0" />}
           </h3>
         )}
 
         {description && (
-          <p className="text-muted-foreground text-base md:text-lg mb-4">
+          <p className="text-muted-foreground text-sm md:text-base mb-4">
             {description}
           </p>
         )}
@@ -97,7 +97,7 @@ const ProjectCard = ({ project, onClick }: Props) => {
           {project.tags.map(tag => (
             <span
               key={tag}
-              className="px-3 py-1 bg-primary/10 text-primary text-sm md:text-base rounded-full"
+              className="px-3 py-1 bg-primary/10 text-primary text-xs md:text-sm rounded-full"
             >
               {tagTranslations[i18n.language]?.[tag] || tag}
             </span>
