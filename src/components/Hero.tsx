@@ -66,9 +66,9 @@ const Hero = () => {
 
           {/* CTA Buttons */}
           <div className="flex flex-wrap items-center justify-center lg:justify-start gap-4 animate-fade-up opacity-0 delay-500">
-            <a href="#projects" className="group inline-flex items-center gap-2 rounded-full bg-primary px-7 py-3.5 font-semibold text-primary-foreground shadow-lg shadow-primary/20 transition-all duration-300 hover:-translate-y-0.5 hover:bg-primary/90 hover:shadow-xl hover:shadow-primary/25 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary">
+            <a href="#projects" className="group inline-flex items-center gap-2 rounded-full border border-border/80 bg-secondary/70 px-7 py-3.5 font-semibold text-foreground shadow-md shadow-black/10 transition-all duration-300 hover:-translate-y-0.5 hover:border-primary/40 hover:bg-secondary hover:shadow-lg hover:shadow-black/20 active:translate-y-0 active:scale-[0.98] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary">
               {t("hero.actions.checkProjects")}
-              <ArrowRight size={18} aria-hidden="true" className="transition-transform duration-300 group-hover:translate-x-1" />
+              <ArrowRight size={17} aria-hidden="true" className="text-primary/80 transition-transform duration-300 group-hover:translate-x-1" />
             </a>
           </div>
         </div>
